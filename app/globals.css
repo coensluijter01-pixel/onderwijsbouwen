@@ -1,26 +1,112 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-cream: #f5f1e8;
+  --bg-cream-warm: #ede7d8;
+  --green-deep: #1B4D3E;
+  --green-darker: #14392E;
+  --green-mid: #2D6A4F;
+  --green-soft: #74A892;
+  --text-on-cream: #0a1a14;
+  --text-muted: #5a5a52;
+  --text-on-deep: #f5f1e8;
+  --hairline-cream: #d4cfc4;
+  --hairline-deep: rgba(245, 241, 232, 0.15);
+  --orange-accent: #e8873a;
+  --gold: #c9a961;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-dm-sans);
+  --font-display: var(--font-fraunces);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  -webkit-text-size-adjust: 100%;
+  background: var(--bg-cream);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-cream);
+  color: var(--text-on-cream);
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.font-display {
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-feature-settings: "ss01", "ss02";
+}
+
+.font-mono {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+.eyebrow {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.h-display-xl {
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-size: clamp(3rem, 8vw, 7rem);
+  font-weight: 400;
+  line-height: 0.92;
+  letter-spacing: -0.04em;
+  font-variation-settings: "opsz" 144;
+}
+
+.h-display-lg {
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  font-variation-settings: "opsz" 72;
+}
+
+.h-display-md {
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-variation-settings: "opsz" 48;
+}
+
+.pullquote {
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-style: italic;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-variation-settings: "opsz" 96;
+}
+
+.stat-numeral {
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-variation-settings: "opsz" 144;
+}
+
+.glow-on-deep {
+  background:
+    radial-gradient(ellipse at top right, rgba(116, 168, 146, 0.10) 0%, transparent 55%),
+    radial-gradient(ellipse at bottom left, rgba(201, 169, 97, 0.06) 0%, transparent 55%);
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--green-deep);
 }
