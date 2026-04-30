@@ -2,7 +2,7 @@ import Link from "next/link";
 import {
   CONTACT_EMAIL,
   FOOTER_LINKS,
-  KVK_PLACEHOLDER,
+  KVK_NUMBER,
   NAV_LINKS,
   VESTIGING,
 } from "@/lib/constants";
@@ -22,7 +22,7 @@ export function LandingFooter() {
             <p className="mt-8 text-xs leading-relaxed text-[#5a5a52]">
               Vestiging: {VESTIGING}
               <br />
-              KVK: {KVK_PLACEHOLDER}
+              KVK: {KVK_NUMBER}
             </p>
           </div>
 

@@ -48,6 +48,6 @@ export const FOOTER_LINKS = [
 ];
 
 export const CONTACT_EMAIL = "contact@onderwijsbouwen.nl";
-export const KVK_PLACEHOLDER = "Nog in te vullen";
+export const KVK_NUMBER = "93598874";
 export const VESTIGING = "Rotterdam";
 export const SITE_URL = "https://onderwijsbouwen.nl";

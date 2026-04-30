@@ -4,7 +4,7 @@ import { Pullquote } from "@/components/pullquote";
 import { SectionHero } from "@/components/section-hero";
 import {
   CONTACT_EMAIL,
-  KVK_PLACEHOLDER,
+  KVK_NUMBER,
   VESTIGING,
 } from "@/lib/constants";
 
@@ -82,7 +82,7 @@ export default function ContactPage() {
                 <div>
                   <dt className="eyebrow text-[#5a5a52]">KVK</dt>
                   <dd className="mt-3 text-[17px] text-[#1B4D3E]">
-                    {KVK_PLACEHOLDER}
+                    {KVK_NUMBER}
                   </dd>
                 </div>
               </dl>
