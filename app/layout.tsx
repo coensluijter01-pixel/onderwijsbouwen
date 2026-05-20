@@ -3,7 +3,12 @@ import { DM_Sans, Fraunces, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { LandingHeader } from "@/components/landing-header";
 import { LandingFooter } from "@/components/landing-footer";
-import { CONTACT_EMAIL, SITE_URL, VESTIGING } from "@/lib/constants";
+import {
+  CONTACT_EMAIL,
+  KVK_NUMBER,
+  SITE_URL,
+  VESTIGING,
+} from "@/lib/constants";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -78,10 +83,21 @@ export const metadata: Metadata = {
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": `${SITE_URL}/#organization`,
   name: "Onderwijsbouwen",
   url: SITE_URL,
-  logo: `${SITE_URL}/opengraph-image`,
+  logo: {
+    "@type": "ImageObject",
+    url: `${SITE_URL}/opengraph-image`,
+  },
   description: SITE_DESCRIPTION,
+  founder: {
+    "@type": "Person",
+    "@id": `${SITE_URL}/over#coen-sluijter`,
+    name: "Coen Sluijter",
+    url: `${SITE_URL}/over`,
+  },
+  foundingDate: "2024",
   foundingLocation: {
     "@type": "Place",
     address: {
@@ -90,7 +106,23 @@ const organizationJsonLd = {
       addressCountry: "NL",
     },
   },
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: VESTIGING,
+    addressCountry: "NL",
+  },
   email: CONTACT_EMAIL,
+  identifier: {
+    "@type": "PropertyValue",
+    propertyID: "KvK",
+    value: KVK_NUMBER,
+  },
+  knowsAbout: [
+    "Onderwijssoftware",
+    "Voortgezet onderwijs",
+    "AI in het onderwijs",
+    "Educatieve technologie",
+  ],
   sameAs: ["https://corrigo.nl", "https://nexusacademy.nl"],
   subOrganization: [
     {
