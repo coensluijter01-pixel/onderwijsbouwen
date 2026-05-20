@@ -203,7 +203,15 @@ export default function PersPage() {
                 >
                   /over
                 </a>
-                -pagina.
+                -pagina. Voor recente mijlpalen die nieuwswaardig kunnen zijn,
+                staat de actuele{" "}
+                <a
+                  href="/changelog"
+                  className="font-semibold text-[#1B4D3E] underline underline-offset-4 hover:text-[#c9a961]"
+                >
+                  changelog
+                </a>{" "}
+                online.
               </p>
             </div>
           </div>

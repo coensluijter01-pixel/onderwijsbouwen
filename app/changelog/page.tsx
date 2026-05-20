@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { SectionHero } from "@/components/section-hero";
 import {
   changelog,
@@ -94,6 +95,14 @@ export default function ChangelogPage() {
               <p className="text-[17px] leading-[1.7] text-[#0a1a14]">
                 Wij houden het kort: enkele regels per mijlpaal en, waar
                 relevant, een directe link naar het betreffende initiatief.
+                Voor wat eraan komt zie de{" "}
+                <Link
+                  href="/roadmap"
+                  className="font-semibold text-[#1B4D3E] underline underline-offset-4 hover:text-[#c9a961]"
+                >
+                  roadmap
+                </Link>
+                .
               </p>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { DarkCta } from "@/components/dark-cta";
 import { SectionHero } from "@/components/section-hero";
 import { SITE_URL } from "@/lib/constants";
@@ -258,7 +259,16 @@ export default function OverPage() {
               <p className="text-[17px] leading-[1.7] text-[#0a1a14]">
                 We werken binnen de structuren van het Nederlandse onderwijs.
                 Onze institutionele aansluitingen bepalen mee hoe we bouwen,
-                met wie we samenwerken en welke standaarden we volgen.
+                met wie we samenwerken en welke standaarden we volgen. Voor
+                een uitgebreid overzicht van onze sub-verwerkers, datalocatie
+                en continuïteitsaanpak zie de pagina{" "}
+                <Link
+                  href="/veiligheid"
+                  className="font-semibold text-[#1B4D3E] underline underline-offset-4 hover:text-[#c9a961]"
+                >
+                  Veiligheid
+                </Link>
+                .
               </p>
             </div>
           </div>
@@ -283,8 +293,67 @@ export default function OverPage() {
         </div>
       </section>
 
+      <section className="border-t border-[#1B4D3E] bg-[#f5f1e8]">
+        <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:py-24">
+          <p className="eyebrow text-[#5a5a52]">06 / Verder lezen</p>
+          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+            <Link
+              href="/pers"
+              className="group flex flex-col border border-[#1B4D3E] p-8 transition-colors hover:bg-[#1B4D3E] hover:text-[#f5f1e8]"
+            >
+              <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#5a5a52] transition-colors group-hover:text-[#f5f1e8]/70">
+                Pers
+              </p>
+              <p className="font-display mt-4 text-[clamp(1.25rem,2vw,1.5rem)] font-medium leading-tight tracking-tight text-[#1B4D3E] transition-colors group-hover:text-[#f5f1e8]">
+                Persinformatie en mediakit
+              </p>
+              <span
+                aria-hidden="true"
+                className="mt-6 font-mono text-[11px] uppercase tracking-[0.18em] text-[#1B4D3E] transition-colors group-hover:text-[#c9a961]"
+              >
+                Lees meer →
+              </span>
+            </Link>
+            <Link
+              href="/carriere"
+              className="group flex flex-col border border-[#1B4D3E] p-8 transition-colors hover:bg-[#1B4D3E] hover:text-[#f5f1e8]"
+            >
+              <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#5a5a52] transition-colors group-hover:text-[#f5f1e8]/70">
+                Carrière
+              </p>
+              <p className="font-display mt-4 text-[clamp(1.25rem,2vw,1.5rem)] font-medium leading-tight tracking-tight text-[#1B4D3E] transition-colors group-hover:text-[#f5f1e8]">
+                Wij groeien op inhoudelijke fit
+              </p>
+              <span
+                aria-hidden="true"
+                className="mt-6 font-mono text-[11px] uppercase tracking-[0.18em] text-[#1B4D3E] transition-colors group-hover:text-[#c9a961]"
+              >
+                Lees meer →
+              </span>
+            </Link>
+            <Link
+              href="/roadmap"
+              className="group flex flex-col border border-[#1B4D3E] p-8 transition-colors hover:bg-[#1B4D3E] hover:text-[#f5f1e8]"
+            >
+              <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#5a5a52] transition-colors group-hover:text-[#f5f1e8]/70">
+                Roadmap
+              </p>
+              <p className="font-display mt-4 text-[clamp(1.25rem,2vw,1.5rem)] font-medium leading-tight tracking-tight text-[#1B4D3E] transition-colors group-hover:text-[#f5f1e8]">
+                Waar wij aan bouwen
+              </p>
+              <span
+                aria-hidden="true"
+                className="mt-6 font-mono text-[11px] uppercase tracking-[0.18em] text-[#1B4D3E] transition-colors group-hover:text-[#c9a961]"
+              >
+                Lees meer →
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <DarkCta
-        eyebrow="06 / Aan tafel"
+        eyebrow="07 / Aan tafel"
         title="Samenwerken of meer weten?"
         body="Onderwijsbouwen werkt samen met scholen, onderzoekers en partnerorganisaties. Een korte mail is altijd het beste startpunt."
         ctaLabel="Neem contact op"

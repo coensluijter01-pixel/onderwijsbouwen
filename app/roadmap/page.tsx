@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { DarkCta } from "@/components/dark-cta";
 import { SectionHero } from "@/components/section-hero";
 import {
@@ -92,7 +93,22 @@ export default function RoadmapPage() {
               <p className="text-[17px] leading-[1.7] text-[#0a1a14]">
                 Per kwartaal tonen we wat is afgerond, wat in uitvoering is en
                 wat gepland staat. De roadmap evolueert met onze gesprekken
-                met scholen, docenten en partners.
+                met scholen, docenten en partners. Voor wat al is gerealiseerd
+                zie de{" "}
+                <Link
+                  href="/changelog"
+                  className="font-semibold text-[#1B4D3E] underline underline-offset-4 hover:text-[#c9a961]"
+                >
+                  changelog
+                </Link>
+                , voor context over wie wij zijn zie{" "}
+                <Link
+                  href="/over"
+                  className="font-semibold text-[#1B4D3E] underline underline-offset-4 hover:text-[#c9a961]"
+                >
+                  Over ons
+                </Link>
+                .
               </p>
             </div>
           </div>

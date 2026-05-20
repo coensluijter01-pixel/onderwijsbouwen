@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Button } from "@/components/button";
 import { DarkCta } from "@/components/dark-cta";
 import { SectionHero } from "@/components/section-hero";
@@ -127,6 +128,16 @@ export default function CarrierePage() {
                   zelfstandigheid en een sterke schrijf- en denkvaardigheid,
                   omdat wij asynchroon werken.
                 </p>
+                <p>
+                  Lees meer over wie wij zijn op de pagina{" "}
+                  <Link
+                    href="/over"
+                    className="font-semibold text-[#1B4D3E] underline underline-offset-4 hover:text-[#c9a961]"
+                  >
+                    Over ons
+                  </Link>
+                  .
+                </p>
               </div>
             </div>
           </div>
@@ -157,6 +168,16 @@ export default function CarrierePage() {
                   contact@onderwijsbouwen.nl →
                 </Button>
               </div>
+              <p className="mt-6 text-sm text-[#5a5a52]">
+                Andere vragen? Zie de{" "}
+                <Link
+                  href="/veelgestelde-vragen"
+                  className="font-semibold text-[#1B4D3E] underline underline-offset-4 hover:text-[#c9a961]"
+                >
+                  veelgestelde vragen
+                </Link>
+                .
+              </p>
             </div>
           </div>
         </div>

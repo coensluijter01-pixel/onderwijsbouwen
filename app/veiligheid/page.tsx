@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { DarkCta } from "@/components/dark-cta";
 import { SectionHero } from "@/components/section-hero";
 
@@ -102,7 +103,15 @@ export default function VeiligheidPage() {
             </div>
             <div className="lg:col-span-7 lg:pt-2">
               <p className="text-[17px] leading-[1.7] text-[#0a1a14]">
-                We bouwen niet bovenop ad-hoc afspraken, maar binnen de
+                Wij zijn Onderwijsbouwen, een Nederlandse onderwijssoftware-
+                studio (zie{" "}
+                <Link
+                  href="/over"
+                  className="font-semibold text-[#1B4D3E] underline underline-offset-4 hover:text-[#c9a961]"
+                >
+                  Over ons
+                </Link>
+                ). We bouwen niet bovenop ad-hoc afspraken, maar binnen de
                 bestaande raamwerken van het Nederlandse onderwijs. Hieronder
                 staan de vier aansluitingen die bepalen hoe we werken,
                 inclusief wat dat in de praktijk betekent voor scholen die met
@@ -233,7 +242,15 @@ export default function VeiligheidPage() {
                   termijnen, en data die voor analytische doelen wordt
                   bewaard, wordt geanonimiseerd of geaggregeerd. De
                   productspecifieke verwerkersovereenkomst bevat de exacte
-                  termijnen per dataset.
+                  termijnen per dataset. Voor de website-specifieke
+                  privacyverklaring zie{" "}
+                  <Link
+                    href="/privacy"
+                    className="font-semibold text-[#1B4D3E] underline underline-offset-4 hover:text-[#c9a961]"
+                  >
+                    Privacyverklaring
+                  </Link>
+                  .
                 </p>
               </div>
             </div>
