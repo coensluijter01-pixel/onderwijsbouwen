@@ -1,5 +1,6 @@
 import Link from "next/link";
 import {
+  COMPANY_LINKS,
   CONTACT_EMAIL,
   FOOTER_LINKS,
   KVK_NUMBER,
@@ -29,14 +30,14 @@ export function LandingFooter() {
           <div className="lg:col-span-3">
             <p className="eyebrow text-[#1B4D3E]">Navigatie</p>
             <ul className="mt-6 space-y-3">
-              {NAV_LINKS.map((link, i) => (
+              {NAV_LINKS.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
                     className="group flex items-baseline gap-3 text-sm text-[#0a1a14] hover:text-[#c9a961]"
                   >
                     <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#5a5a52] group-hover:text-[#c9a961]">
-                      {String(i + 1).padStart(2, "0")}
+                      {link.num}
                     </span>
                     {link.label}
                   </Link>
@@ -112,26 +113,40 @@ export function LandingFooter() {
           </div>
 
           <div className="lg:col-span-3">
-            <p className="eyebrow text-[#1B4D3E]">Contact</p>
+            <p className="eyebrow text-[#1B4D3E]">Onderwijsbouwen</p>
             <ul className="mt-6 space-y-3">
               <li>
                 <a
                   href={`mailto:${CONTACT_EMAIL}`}
-                  className="text-sm text-[#0a1a14] hover:text-[#c9a961]"
+                  className="text-sm font-medium text-[#0a1a14] hover:text-[#c9a961]"
                 >
                   {CONTACT_EMAIL}
                 </a>
               </li>
-              {FOOTER_LINKS.map((link) => (
+              {COMPANY_LINKS.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-[#5a5a52] hover:text-[#0a1a14]"
+                    className="text-sm text-[#5a5a52] hover:text-[#c9a961]"
                   >
                     {link.label}
                   </Link>
                 </li>
               ))}
+              <li className="pt-3">
+                <ul className="space-y-3 border-t border-[#d4cfc4] pt-3">
+                  {FOOTER_LINKS.map((link) => (
+                    <li key={link.href}>
+                      <Link
+                        href={link.href}
+                        className="text-xs text-[#5a5a52] hover:text-[#0a1a14]"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </li>
             </ul>
           </div>
         </div>

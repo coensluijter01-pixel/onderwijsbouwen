@@ -63,9 +63,9 @@ export function LandingHeader() {
 
         <div className="hidden items-center gap-8 md:flex">
           <nav className="flex items-center gap-7">
-            {NAV_LINKS.map((link, i) => {
+            {NAV_LINKS.map((link) => {
               const active = isActive(link.href);
-              const num = String(i + 1).padStart(2, "0");
+              const num = link.num;
               return (
                 <Link
                   key={link.href}
@@ -117,9 +117,9 @@ export function LandingHeader() {
       {open ? (
         <div className="border-t border-[#f5f1e8]/15 bg-[#1B4D3E] md:hidden">
           <nav className="mx-auto flex w-full max-w-6xl flex-col px-6 py-4">
-            {NAV_LINKS.map((link, i) => {
+            {NAV_LINKS.map((link) => {
               const active = isActive(link.href);
-              const num = String(i + 1).padStart(2, "0");
+              const num = link.num;
               return (
                 <Link
                   key={link.href}

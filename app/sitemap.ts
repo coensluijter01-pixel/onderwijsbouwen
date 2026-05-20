@@ -9,6 +9,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/projecten",
     "/doelgroepen",
     "/contact",
+    "/over",
+    "/veiligheid",
+    "/pers",
     "/privacy",
   ];
 

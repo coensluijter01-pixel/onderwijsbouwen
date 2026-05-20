@@ -35,10 +35,18 @@ export const PRODUCTS: Product[] = [
 ];
 
 export const NAV_LINKS = [
-  { label: "Visie", href: "/onderwijsontwikkeling" },
-  { label: "Initiatieven", href: "/initiatieven" },
-  { label: "Projecten", href: "/projecten" },
-  { label: "Doelgroepen", href: "/doelgroepen" },
+  { num: "00", label: "Over", href: "/over" },
+  { num: "01", label: "Visie", href: "/onderwijsontwikkeling" },
+  { num: "02", label: "Initiatieven", href: "/initiatieven" },
+  { num: "03", label: "Projecten", href: "/projecten" },
+  { num: "04", label: "Doelgroepen", href: "/doelgroepen" },
+  { num: "05", label: "Contact", href: "/contact" },
+];
+
+export const COMPANY_LINKS = [
+  { label: "Over ons", href: "/over" },
+  { label: "Veiligheid", href: "/veiligheid" },
+  { label: "Pers", href: "/pers" },
   { label: "Contact", href: "/contact" },
 ];
 
