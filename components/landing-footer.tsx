@@ -4,6 +4,7 @@ import {
   CONTACT_EMAIL,
   FOOTER_LINKS,
   KVK_NUMBER,
+  MORE_LINKS,
   NAV_LINKS,
   VESTIGING,
 } from "@/lib/constants";
@@ -13,7 +14,7 @@ export function LandingFooter() {
     <footer className="border-t border-[#1B4D3E] bg-[#f5f1e8]">
       <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:py-24">
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-12 lg:gap-10">
-          <div className="lg:col-span-4">
+          <div className="lg:col-span-3">
             <p className="font-display text-[28px] font-medium leading-none tracking-tight text-[#1B4D3E]">
               onderwijsbouwen
             </p>
@@ -27,7 +28,7 @@ export function LandingFooter() {
             </p>
           </div>
 
-          <div className="lg:col-span-3">
+          <div className="lg:col-span-2">
             <p className="eyebrow text-[#1B4D3E]">Navigatie</p>
             <ul className="mt-6 space-y-3">
               {NAV_LINKS.map((link) => (
@@ -147,6 +148,22 @@ export function LandingFooter() {
                   ))}
                 </ul>
               </li>
+            </ul>
+          </div>
+
+          <div className="lg:col-span-2">
+            <p className="eyebrow text-[#1B4D3E]">Meer</p>
+            <ul className="mt-6 space-y-3">
+              {MORE_LINKS.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-[#0a1a14] hover:text-[#c9a961]"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

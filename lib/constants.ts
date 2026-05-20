@@ -50,6 +50,13 @@ export const COMPANY_LINKS = [
   { label: "Contact", href: "/contact" },
 ];
 
+export const MORE_LINKS = [
+  { label: "Roadmap", href: "/roadmap" },
+  { label: "Changelog", href: "/changelog" },
+  { label: "Veelgestelde vragen", href: "/veelgestelde-vragen" },
+  { label: "Carrière", href: "/carriere" },
+];
+
 export const FOOTER_LINKS = [
   { label: "Privacyverklaring", href: "/privacy" },
   { label: "Sitemap", href: "/sitemap.xml" },
