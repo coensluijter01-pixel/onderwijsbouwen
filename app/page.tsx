@@ -9,13 +9,13 @@ import { PRODUCTS } from "@/lib/constants";
 
 export const metadata: Metadata = {
   description:
-    "Onderwijsbouwen ontwikkelt technologie en kennis voor het Nederlandse onderwijs. De holding achter Corrigo voor docenten en Nexus Academy voor leerlingen.",
+    "Onderwijsbouwen ontwikkelt technologie en kennis voor het Nederlandse onderwijs. We bouwen aan twee initiatieven: Corrigo voor docenten en Nexus Academy voor leerlingen.",
   alternates: { canonical: "/" },
   openGraph: {
     url: "/",
     title: "Onderwijsbouwen | Bouwen aan onderwijs",
     description:
-      "Onderwijsbouwen ontwikkelt technologie en kennis voor het Nederlandse onderwijs. De holding achter Corrigo voor docenten en Nexus Academy voor leerlingen.",
+      "Onderwijsbouwen ontwikkelt technologie en kennis voor het Nederlandse onderwijs. We bouwen aan twee initiatieven: Corrigo voor docenten en Nexus Academy voor leerlingen.",
   },
 };
 

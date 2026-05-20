@@ -26,7 +26,7 @@ const geistMono = Geist_Mono({
 });
 
 const SITE_DESCRIPTION =
-  "Onderwijsbouwen ontwikkelt technologie en kennis voor het Nederlandse onderwijs. De holding achter Corrigo voor docenten en Nexus Academy voor leerlingen.";
+  "Onderwijsbouwen ontwikkelt technologie en kennis voor het Nederlandse onderwijs. We bouwen aan twee initiatieven: Corrigo voor docenten en Nexus Academy voor leerlingen.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Onderwijsbouwen | Bouwen aan onderwijs",
     description:
-      "De Nederlandse holding achter Corrigo en Nexus Academy.",
+      "Nederlandse onderwijssoftware-studio. We bouwen aan Corrigo en Nexus Academy.",
   },
   robots: {
     index: true,
