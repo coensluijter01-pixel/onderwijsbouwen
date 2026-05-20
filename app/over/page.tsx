@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DarkCta } from "@/components/dark-cta";
 import { SectionHero } from "@/components/section-hero";
+import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Over Onderwijsbouwen",
@@ -52,9 +53,34 @@ const affiliations = [
   },
 ];
 
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": `${SITE_URL}/over#coen-sluijter`,
+  name: "Coen Sluijter",
+  jobTitle: "Oprichter",
+  worksFor: {
+    "@id": `${SITE_URL}/#organization`,
+  },
+  url: `${SITE_URL}/over`,
+  description:
+    "Oprichter van Onderwijsbouwen en docent aardrijkskunde in het voortgezet onderwijs in de Haaglanden.",
+  knowsAbout: [
+    "Onderwijssoftware",
+    "Aardrijkskunde",
+    "Voortgezet onderwijs",
+    "AI in het onderwijs",
+  ],
+};
+
 export default function OverPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+      />
+
       <SectionHero
         eyebrow="01 / Over ons"
         digit="01"

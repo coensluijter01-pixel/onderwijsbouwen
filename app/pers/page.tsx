@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { CopyButton } from "@/components/copy-button";
 import { DarkCta } from "@/components/dark-cta";
 import { SectionHero } from "@/components/section-hero";
-import { CONTACT_EMAIL, KVK_NUMBER, VESTIGING } from "@/lib/constants";
+import { CONTACT_EMAIL, KVK_NUMBER, SITE_URL, VESTIGING } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Pers",
@@ -47,9 +47,34 @@ const colors = [
   { name: "Goud", hex: "#c9a961", textColor: "#1B4D3E" },
 ];
 
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": `${SITE_URL}/over#coen-sluijter`,
+  name: "Coen Sluijter",
+  jobTitle: "Oprichter",
+  worksFor: {
+    "@id": `${SITE_URL}/#organization`,
+  },
+  url: `${SITE_URL}/over`,
+  description:
+    "Oprichter van Onderwijsbouwen en docent aardrijkskunde in het voortgezet onderwijs in de Haaglanden.",
+  knowsAbout: [
+    "Onderwijssoftware",
+    "Aardrijkskunde",
+    "Voortgezet onderwijs",
+    "AI in het onderwijs",
+  ],
+};
+
 export default function PersPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+      />
+
       <SectionHero
         eyebrow="03 / Pers"
         digit="03"
