@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ChevronDown } from "lucide-react";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { DarkCta } from "@/components/dark-cta";
 import { SectionHero } from "@/components/section-hero";
 import {
@@ -40,6 +41,12 @@ export default function VeelgesteldeVragenPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Veelgestelde vragen", path: "/veelgestelde-vragen" },
+        ]}
       />
 
       <SectionHero

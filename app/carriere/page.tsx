@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { Button } from "@/components/button";
 import { DarkCta } from "@/components/dark-cta";
 import { SectionHero } from "@/components/section-hero";
@@ -41,6 +42,12 @@ const mailtoOpenSollicitatie =
 export default function CarrierePage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Carrière", path: "/carriere" },
+        ]}
+      />
       <SectionHero
         eyebrow="09 / Carrière"
         digit="09"

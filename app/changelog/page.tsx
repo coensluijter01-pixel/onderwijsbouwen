@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { SectionHero } from "@/components/section-hero";
 import {
   changelog,
@@ -61,6 +62,12 @@ export default function ChangelogPage() {
 
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Changelog", path: "/changelog" },
+        ]}
+      />
       <SectionHero
         eyebrow="07 / Changelog"
         digit="07"

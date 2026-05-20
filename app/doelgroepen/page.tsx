@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { DarkCta } from "@/components/dark-cta";
 import { Pullquote } from "@/components/pullquote";
 import { SectionHero } from "@/components/section-hero";
@@ -68,6 +69,12 @@ const audiences: { num: string; label: string; body: string; cta: AudienceCta }[
 export default function DoelgroepenPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Doelgroepen", path: "/doelgroepen" },
+        ]}
+      />
       <SectionHero
         eyebrow="Het ecosysteem"
         digit="04"

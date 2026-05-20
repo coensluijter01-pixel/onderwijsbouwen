@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { DarkCta } from "@/components/dark-cta";
 import { SectionHero } from "@/components/section-hero";
 import {
@@ -59,6 +60,12 @@ export default function RoadmapPage() {
 
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Roadmap", path: "/roadmap" },
+        ]}
+      />
       <SectionHero
         eyebrow="06 / Roadmap"
         digit="06"

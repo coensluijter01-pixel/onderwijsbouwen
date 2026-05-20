@@ -6,6 +6,7 @@
 
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { SectionHero } from "@/components/section-hero";
 import { CONTACT_EMAIL, KVK_NUMBER, VESTIGING } from "@/lib/constants";
 
@@ -27,6 +28,12 @@ const LAATSTE_UPDATE = "20 mei 2026";
 export default function PrivacyPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Privacyverklaring", path: "/privacy" },
+        ]}
+      />
       <SectionHero
         eyebrow="10 / Privacyverklaring"
         digit="10"

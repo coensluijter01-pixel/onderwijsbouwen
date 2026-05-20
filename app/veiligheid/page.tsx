@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { DarkCta } from "@/components/dark-cta";
 import { SectionHero } from "@/components/section-hero";
 
@@ -77,6 +78,12 @@ const subprocessors = [
 export default function VeiligheidPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Veiligheid", path: "/veiligheid" },
+        ]}
+      />
       <SectionHero
         eyebrow="02 / Veiligheid"
         digit="02"

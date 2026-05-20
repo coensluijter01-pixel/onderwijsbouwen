@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { DarkCta } from "@/components/dark-cta";
 import { Pullquote } from "@/components/pullquote";
 import { SectionHero } from "@/components/section-hero";
@@ -38,6 +39,12 @@ const directions = [
 export default function ProjectenPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Projecten", path: "/projecten" },
+        ]}
+      />
       <SectionHero
         eyebrow="Onze richting"
         digit="03"

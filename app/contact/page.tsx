@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { Pullquote } from "@/components/pullquote";
 import { SectionHero } from "@/components/section-hero";
 import {
@@ -45,6 +46,12 @@ const audiences = [
 export default function ContactPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Contact", path: "/contact" },
+        ]}
+      />
       <SectionHero
         eyebrow="Direct contact"
         digit="05"
