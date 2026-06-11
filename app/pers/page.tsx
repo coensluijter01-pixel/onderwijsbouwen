@@ -8,21 +8,21 @@ import { CONTACT_EMAIL, KVK_NUMBER, SITE_URL, VESTIGING } from "@/lib/constants"
 export const metadata: Metadata = {
   title: "Pers",
   description:
-    "Persinformatie, boilerplate, woordmerken en perscontact voor Onderwijsbouwen, Corrigo en Nexus.",
+    "Persinformatie, boilerplate, woordmerken en perscontact voor Onderwijsbouwen, Corrigo, Actuales en Nexus.",
   alternates: { canonical: "/pers" },
   openGraph: {
     url: "/pers",
     title: "Pers | Onderwijsbouwen",
     description:
-      "Persinformatie, boilerplate, woordmerken en perscontact voor Onderwijsbouwen, Corrigo en Nexus.",
+      "Persinformatie, boilerplate, woordmerken en perscontact voor Onderwijsbouwen, Corrigo, Actuales en Nexus.",
   },
 };
 
 const boilerplateShort =
-  "Onderwijsbouwen is een Nederlandse onderwijssoftware-studio, gevestigd in Rotterdam. Onderwijsbouwen ontwikkelt tools en initiatieven voor het voortgezet onderwijs, waaronder Corrigo (AI-nakijktool voor docenten) en Nexus (leerplatform voor leerlingen). Opgericht in 2024 door Coen Sluijter, docent aardrijkskunde.";
+  "Onderwijsbouwen is een Nederlandse onderwijssoftware-studio, gevestigd in Rotterdam. Onderwijsbouwen ontwikkelt tools en initiatieven voor het Nederlandse onderwijs, waaronder Corrigo (AI-nakijktool voor docenten), Actuales (wekelijkse lespakketten over actueel nieuws) en Nexus (leerplatform voor leerlingen). Opgericht in 2024 door Coen Sluijter, docent aardrijkskunde.";
 
 const boilerplateLong =
-  "Onderwijsbouwen is een Nederlandse onderwijssoftware-studio die werkt aan slimme tools voor het voortgezet onderwijs. Het bedrijf is in 2024 opgericht door Coen Sluijter, docent aardrijkskunde in de Haaglanden, en is gevestigd in Rotterdam (KvK 93598874). Onderwijsbouwen ontwikkelt twee initiatieven: Corrigo, een AI-nakijk- en toetsbouwtool voor docenten in het voortgezet onderwijs, en Nexus, een leerplatform in ontwikkeling voor leerlingen. Beide initiatieven delen hetzelfde uitgangspunt: de docent en de school in de regie houden, en bouwen vanuit de praktijk van het Nederlandse onderwijs. Onderwijsbouwen werkt samen met scholen in de Haaglanden en is aangesloten bij Kennisnet Entree Federatie, SIVON, het Privacyconvenant Onderwijs en Edu-V. Het bedrijf is klein, toegewijd en in groei, met een netwerk van docent-adviseurs en institutionele partners.";
+  "Onderwijsbouwen is een Nederlandse onderwijssoftware-studio die werkt aan slimme tools voor het Nederlandse onderwijs. Het bedrijf is in 2024 opgericht door Coen Sluijter, docent aardrijkskunde in de Haaglanden, en is gevestigd in Rotterdam (KvK 93598874). Onderwijsbouwen ontwikkelt drie initiatieven: Corrigo, een AI-nakijk- en toetsbouwtool voor docenten in het voortgezet onderwijs; Actuales, wekelijkse lespakketten over actueel nieuws voor po en onderbouw vo; en Nexus, een leerplatform in ontwikkeling voor leerlingen. Alle initiatieven delen hetzelfde uitgangspunt: de docent en de school in de regie houden, en bouwen vanuit de praktijk van het Nederlandse onderwijs. Onderwijsbouwen werkt samen met scholen in de Haaglanden en is aangesloten bij Kennisnet Entree Federatie, SIVON, het Privacyconvenant Onderwijs en Edu-V. Het bedrijf is klein, toegewijd en in groei, met een netwerk van docent-adviseurs en institutionele partners.";
 
 const quickFacts = [
   { label: "Opgericht", value: "2024" },
@@ -30,9 +30,9 @@ const quickFacts = [
   { label: "KvK", value: KVK_NUMBER },
   {
     label: "Initiatieven",
-    value: "Corrigo (live), Nexus (in ontwikkeling)",
+    value: "Corrigo (live), Actuales (live), Nexus (in ontwikkeling)",
   },
-  { label: "Doelgroep", value: "Voortgezet onderwijs in Nederland" },
+  { label: "Doelgroep", value: "Primair en voortgezet onderwijs in Nederland" },
   {
     label: "Aansluitingen",
     value:
@@ -92,7 +92,7 @@ export default function PersPage() {
             en mediakit.
           </>
         }
-        lead="Voor pers, onderzoekers en mediavragen over Onderwijsbouwen, Corrigo en Nexus."
+        lead="Voor pers, onderzoekers en mediavragen over Onderwijsbouwen, Corrigo, Actuales en Nexus."
       />
 
       <section className="border-t border-[#1B4D3E] bg-[#f5f1e8]">

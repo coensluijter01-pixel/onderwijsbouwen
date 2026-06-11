@@ -117,7 +117,7 @@ export default function OnderwijsontwikkelingPage() {
               <p className="text-[#5a5a52]">
                 Onderwijsbouwen werkt aan dat herontwerp. Niet als denktank,
                 maar in concrete initiatieven die in het onderwijs zelf
-                gebruikt worden. De eerste twee zijn Corrigo en Nexus Academy.
+                gebruikt worden. De eerste drie zijn Corrigo, Actuales en Nexus Academy.
                 Meer volgt.
               </p>
             </div>

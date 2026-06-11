@@ -11,25 +11,27 @@ import {
 export const metadata: Metadata = {
   title: "Changelog",
   description:
-    "Mijlpalen en releases van Onderwijsbouwen, Corrigo en Nexus.",
+    "Mijlpalen en releases van Onderwijsbouwen, Corrigo, Actuales en Nexus.",
   alternates: { canonical: "/changelog" },
   openGraph: {
     url: "/changelog",
     title: "Changelog | Onderwijsbouwen",
     description:
-      "Mijlpalen en releases van Onderwijsbouwen, Corrigo en Nexus.",
+      "Mijlpalen en releases van Onderwijsbouwen, Corrigo, Actuales en Nexus.",
   },
 };
 
 const typeLabel: Record<ChangelogType, string> = {
   organisatie: "Organisatie",
   corrigo: "Corrigo",
+  actuales: "Actuales",
   nexus: "Nexus",
 };
 
 const typeStyles: Record<ChangelogType, string> = {
   organisatie: "bg-[#1B4D3E]/10 text-[#1B4D3E]",
   corrigo: "bg-[#c9a961]/20 text-[#1B4D3E]",
+  actuales: "bg-[#4a7c9e]/20 text-[#1B4D3E]",
   nexus: "bg-black/5 text-black/70",
 };
 
@@ -78,7 +80,7 @@ export default function ChangelogPage() {
             is gebeurd.
           </>
         }
-        lead="Mijlpalen van Onderwijsbouwen, Corrigo en Nexus, gesorteerd op datum. Voor dieper-technische product-releases verwijzen wij naar de changelogs van de productsites zelf."
+        lead="Mijlpalen van Onderwijsbouwen, Corrigo, Actuales en Nexus, gesorteerd op datum. Voor dieper-technische product-releases verwijzen wij naar de changelogs van de productsites zelf."
       />
 
       <section className="border-t border-[#1B4D3E] bg-[#f5f1e8]">

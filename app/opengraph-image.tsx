@@ -8,6 +8,6 @@ export default async function OpengraphImage() {
   return buildOgImage({
     title: "Bouwen aan onderwijs.",
     subtitle:
-      "Nederlandse onderwijssoftware-studio. We bouwen aan Corrigo en Nexus Academy.",
+      "Nederlandse onderwijssoftware-studio. We bouwen aan Corrigo, Actuales en Nexus Academy.",
   });
 }

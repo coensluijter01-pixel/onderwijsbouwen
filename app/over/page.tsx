@@ -131,11 +131,13 @@ export default function OverPage() {
                   goede gesprekken met de mensen die er dagelijks mee werken.
                 </p>
                 <p>
-                  We bouwen aan twee initiatieven: Corrigo, een nakijk- en
-                  toetsbouwtool voor docenten in het voortgezet onderwijs, en
-                  Nexus, een leerplatform in ontwikkeling voor leerlingen.
-                  Beide initiatieven hebben dezelfde basis: respect voor de
-                  tijd van de gebruiker en de regie van de school.
+                  We bouwen aan drie initiatieven: Corrigo, een nakijk- en
+                  toetsbouwtool voor docenten in het voortgezet onderwijs;
+                  Actuales, wekelijkse lespakketten over actueel nieuws voor
+                  po en onderbouw vo; en Nexus, een leerplatform in
+                  ontwikkeling voor leerlingen. Alle initiatieven delen dezelfde
+                  basis: respect voor de tijd van de gebruiker en de regie van
+                  de school.
                 </p>
               </div>
             </div>
@@ -194,10 +196,12 @@ export default function OverPage() {
                   correctie-zondag.
                 </p>
                 <p>
-                  Inmiddels werken we ook aan Nexus, een leerplatform dat
-                  hetzelfde uitgangspunt toepast op het leerling-perspectief.
-                  De rode draad blijft hetzelfde: bouwen vanuit de praktijk,
-                  met de mensen die er dagelijks in werken.
+                  Inmiddels werken we ook aan Actuales, dat actueel nieuws
+                  terugbrengt in de klas met kant-en-klare lespakketten, en aan
+                  Nexus, een leerplatform dat hetzelfde uitgangspunt toepast op
+                  het leerling-perspectief. De rode draad blijft hetzelfde:
+                  bouwen vanuit de praktijk, met de mensen die er dagelijks in
+                  werken.
                 </p>
               </div>
             </div>

@@ -8,6 +8,6 @@ export default async function PersOpengraphImage() {
   return buildOgImage({
     title: "Pers en mediakit.",
     subtitle:
-      "Voor pers, onderzoekers en mediavragen over Onderwijsbouwen, Corrigo en Nexus.",
+      "Voor pers, onderzoekers en mediavragen over Onderwijsbouwen, Corrigo, Actuales en Nexus.",
   });
 }

@@ -2,7 +2,7 @@
 // Changelog op onderwijsbouwen.nl toont organisatie- en high-level
 // productmijlpalen. Diepe product-changelogs horen op de productsites zelf.
 
-export type ChangelogType = "organisatie" | "corrigo" | "nexus";
+export type ChangelogType = "organisatie" | "corrigo" | "actuales" | "nexus";
 
 export type ChangelogItem = {
   id: string;
@@ -14,6 +14,15 @@ export type ChangelogItem = {
 };
 
 export const changelog: ChangelogItem[] = [
+  {
+    id: "2026-06-actuales-launch",
+    datum: "2026-06-11",
+    type: "actuales",
+    titel: "Actuales live",
+    beschrijving:
+      "Lancering van Actuales: wekelijkse lespakketten over actueel nieuws voor po en onderbouw vo. Presentatie, lesscript, werkbladen op drie niveaus, quiz en nieuwsfragment, klaar voor digibord en print.",
+    link: "https://actuales.nl",
+  },
   {
     id: "2026-05-corporate-site",
     datum: "2026-05-20",
@@ -50,4 +59,4 @@ export const changelog: ChangelogItem[] = [
   },
 ];
 
-export const changelogBijgewerkt = "2026-05-20";
+export const changelogBijgewerkt = "2026-06-11";

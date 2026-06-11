@@ -6,6 +6,8 @@ import { LandingFooter } from "@/components/landing-footer";
 import {
   CONTACT_EMAIL,
   KVK_NUMBER,
+  PRODUCTS,
+  SITE_DESCRIPTION,
   SITE_URL,
   VESTIGING,
 } from "@/lib/constants";
@@ -30,9 +32,6 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
-const SITE_DESCRIPTION =
-  "Onderwijsbouwen ontwikkelt technologie en kennis voor het Nederlandse onderwijs. We bouwen aan twee initiatieven: Corrigo voor docenten en Nexus Academy voor leerlingen.";
-
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
@@ -46,6 +45,7 @@ export const metadata: Metadata = {
     "onderwijs",
     "AI in het onderwijs",
     "Corrigo",
+    "Actuales",
     "Nexus Academy",
     "voortgezet onderwijs",
     "lerarentekort",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Onderwijsbouwen | Bouwen aan onderwijs",
     description:
-      "Nederlandse onderwijssoftware-studio. We bouwen aan Corrigo en Nexus Academy.",
+      "Nederlandse onderwijssoftware-studio. We bouwen aan Corrigo, Actuales en Nexus Academy.",
   },
   robots: {
     index: true,
@@ -123,22 +123,13 @@ const organizationJsonLd = {
     "AI in het onderwijs",
     "Educatieve technologie",
   ],
-  sameAs: ["https://corrigo.nl", "https://nexusacademy.nl"],
-  subOrganization: [
-    {
-      "@type": "Organization",
-      name: "Corrigo",
-      url: "https://corrigo.nl",
-      description:
-        "AI-nakijktool voor docenten in het voortgezet onderwijs.",
-    },
-    {
-      "@type": "Organization",
-      name: "Nexus Academy",
-      url: "https://nexusacademy.nl",
-      description: "AI-leercoach voor leerlingen en studenten.",
-    },
-  ],
+  sameAs: PRODUCTS.map((product) => product.href),
+  subOrganization: PRODUCTS.map((product) => ({
+    "@type": "Organization",
+    name: product.name,
+    url: product.href,
+    description: product.shortDescription,
+  })),
 };
 
 export default function RootLayout({

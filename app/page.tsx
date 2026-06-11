@@ -5,24 +5,22 @@ import { DarkCta } from "@/components/dark-cta";
 import { NumberedStat } from "@/components/numbered-stat";
 import { Pullquote } from "@/components/pullquote";
 import { SectionHero } from "@/components/section-hero";
-import { PRODUCTS } from "@/lib/constants";
+import { PRODUCTS, SITE_DESCRIPTION } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  description:
-    "Onderwijsbouwen ontwikkelt technologie en kennis voor het Nederlandse onderwijs. We bouwen aan twee initiatieven: Corrigo voor docenten en Nexus Academy voor leerlingen.",
+  description: SITE_DESCRIPTION,
   alternates: { canonical: "/" },
   openGraph: {
     url: "/",
     title: "Onderwijsbouwen | Bouwen aan onderwijs",
-    description:
-      "Onderwijsbouwen ontwikkelt technologie en kennis voor het Nederlandse onderwijs. We bouwen aan twee initiatieven: Corrigo voor docenten en Nexus Academy voor leerlingen.",
+    description: SITE_DESCRIPTION,
   },
 };
 
 const homeProducts = [
   {
     name: "Corrigo",
-    audience: "Initiatief 01, voor docenten",
+    audience: "Initiatief 01, voor docenten in het vo",
     tagline: "AI-nakijktool voor het voortgezet onderwijs",
     stat: "6 uur per week",
     statLabel: "die docenten gemiddeld terugkrijgen",
@@ -32,14 +30,25 @@ const homeProducts = [
     linkLabel: "Pilot starten op corrigo.nl",
   },
   {
+    name: "Actuales",
+    audience: "Initiatief 02, voor docenten in po en onderbouw vo",
+    tagline: "Wekelijkse lespakketten over actueel nieuws",
+    stat: "Elke week",
+    statLabel: "een compleet lespakket, klaar voor de klas",
+    body: "Actuales maakt van elke grote nieuwsgebeurtenis een kant-en-klaar lespakket: presentatie, lesscript, werkbladen op drie niveaus met NT2-taalsteun, quiz en een nieuwsfragment met kijkvragen. Maandagochtend in vijf minuten een complete les over het nieuws, voor groep 5 tot en met 8 en de onderbouw van het vo.",
+    href: PRODUCTS[1].href,
+    domain: PRODUCTS[1].domain,
+    linkLabel: "Bekijk actuales.nl",
+  },
+  {
     name: "Nexus Academy",
-    audience: "Initiatief 02, voor leerlingen",
+    audience: "Initiatief 03, voor leerlingen",
     tagline: "AI-leercoach voor leerlingen en studenten",
     stat: "24/7 beschikbaar",
     statLabel: "persoonlijke begeleiding, voor iedereen",
     body: "Nexus Academy biedt leerlingen toegang tot een persoonlijke leercoach die uitlegt, doorvraagt en meedenkt op het niveau van de leerling zelf. Het verschil met bestaande oplossingen zit niet alleen in de technologie, maar in de toegankelijkheid. Persoonlijke begeleiding hoort niet langer af te hangen van wat een ouder kan betalen.",
-    href: PRODUCTS[1].href,
-    domain: PRODUCTS[1].domain,
+    href: PRODUCTS[2].href,
+    domain: PRODUCTS[2].domain,
     linkLabel: "Begin met Nexus",
   },
 ];
@@ -73,7 +82,7 @@ const audiences: { num: string; label: string; body: string; cta: AudienceCta }[
     {
       num: "01",
       label: "Scholen",
-      body: "Schoolleiders en bestuurders die hun docententeam willen ontlasten en hun leerlingen serieus willen nemen, kunnen via Corrigo direct aan de slag. Voor implementatietrajecten op grotere schaal is contact met de Corrigo-organisatie het beste startpunt.",
+      body: "Schoolleiders en bestuurders die hun docententeam willen ontlasten en hun leerlingen serieus willen nemen, kunnen via Corrigo direct aan de slag in het voortgezet onderwijs. Voor actueel nieuws in po en onderbouw vo is Actuales de directe ingang. Voor implementatietrajecten op grotere schaal is contact met onze organisatie het beste startpunt.",
       cta: {
         text: "Corrigo voor scholen",
         href: "https://corrigo.nl",
@@ -83,7 +92,7 @@ const audiences: { num: string; label: string; body: string; cta: AudienceCta }[
     {
       num: "02",
       label: "Docenten",
-      body: "Docenten zijn het belangrijkste startpunt van ons werk. Beide initiatieven zijn ontwikkeld in nauw contact met leraren in het voortgezet onderwijs, en blijven afhankelijk van hun feedback om relevant te blijven. Aanmeldingen voor pilot-trajecten worden actief gezocht.",
+      body: "Docenten zijn het belangrijkste startpunt van ons werk. Onze initiatieven zijn ontwikkeld in nauw contact met leraren in po en vo, en blijven afhankelijk van hun feedback om relevant te blijven. Corrigo voor nakijken in het vo, Actuales voor actueel nieuws in po en onderbouw vo. Aanmeldingen voor pilot-trajecten worden actief gezocht.",
       cta: {
         text: "Probeer Corrigo",
         href: "https://corrigo.nl",
@@ -149,7 +158,7 @@ export default function Home() {
             <Button
               as="a"
               variant="primary"
-              href="https://corrigo.nl"
+              href={PRODUCTS[0].href}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -158,7 +167,16 @@ export default function Home() {
             <Button
               as="a"
               variant="ghost-light"
-              href="https://nexusacademy.nl"
+              href={PRODUCTS[1].href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Bekijk Actuales →
+            </Button>
+            <Button
+              as="a"
+              variant="ghost-light"
+              href={PRODUCTS[2].href}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -177,23 +195,24 @@ export default function Home() {
             <div className="lg:col-span-5">
               <p className="eyebrow text-[#5a5a52]">02 / De initiatieven</p>
               <h2 className="h-display-lg mt-8 text-[#1B4D3E]">
-                Twee bouwstenen.
+                Drie bouwstenen.
                 <br />
                 Eén systeem.
               </h2>
             </div>
             <div className="lg:col-span-7 lg:pt-2">
               <p className="text-[19px] leading-[1.55] text-[#0a1a14]">
-                Onderwijsbouwen werkt op dit moment aan twee zelfstandige
+                Onderwijsbouwen werkt op dit moment aan drie zelfstandige
                 initiatieven die elk een specifieke laag van het Nederlandse
-                onderwijs aanpakken. Corrigo richt zich op de docentenkant,
-                waar werkdruk en correctiewerk leraren kostbare tijd kosten.
-                Nexus Academy werkt op de leerlingkant, waar persoonlijke
-                begeleiding voor te veel kinderen afhankelijk is van het
-                inkomen van hun ouders. Beide initiatieven werken op zichzelf,
-                maar samen vormen ze de eerste twee bouwstenen van een bredere
-                benadering van de structurele uitdagingen waar het Nederlandse
-                onderwijs voor staat.
+                onderwijs aanpakken. Corrigo richt zich op de docentenkant in
+                het voortgezet onderwijs, waar werkdruk en correctiewerk
+                leraren kostbare tijd kosten. Actuales brengt actueel nieuws
+                terug in de klas, met kant-en-klare lespakketten voor po en
+                onderbouw vo. Nexus Academy werkt op de leerlingkant, waar
+                persoonlijke begeleiding voor te veel kinderen afhankelijk is
+                van het inkomen van hun ouders. Samen vormen ze de eerste drie
+                bouwstenen van een bredere benadering van de structurele
+                uitdagingen waar het Nederlandse onderwijs voor staat.
               </p>
             </div>
           </div>
@@ -201,7 +220,7 @@ export default function Home() {
 
         <div className="border-t border-[#1B4D3E]">
           <div className="mx-auto w-full max-w-6xl">
-            <div className="grid grid-cols-1 lg:grid-cols-2 lg:divide-x lg:divide-[#1B4D3E]">
+            <div className="grid grid-cols-1 lg:grid-cols-3 lg:divide-x lg:divide-[#1B4D3E]">
               {homeProducts.map((product, idx) => (
                 <a
                   key={product.domain}
@@ -209,7 +228,9 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`group flex cursor-pointer flex-col p-12 transition-colors duration-300 hover:bg-[#1B4D3E] hover:text-[#f5f1e8] md:p-16 ${
-                    idx === 0 ? "border-b border-[#1B4D3E] lg:border-b-0" : ""
+                    idx < homeProducts.length - 1
+                      ? "border-b border-[#1B4D3E] lg:border-b-0"
+                      : ""
                   }`}
                 >
                   <p className="eyebrow text-[#5a5a52] transition-colors group-hover:text-[#f5f1e8]/60">
@@ -341,15 +362,15 @@ export default function Home() {
 
         <div className="border-t border-[#1B4D3E]">
           <div className="mx-auto w-full max-w-6xl">
-            <div className="grid grid-cols-1 lg:grid-cols-2 lg:divide-x lg:divide-[#1B4D3E]">
+            <div className="grid grid-cols-1 lg:grid-cols-3 lg:divide-x lg:divide-[#1B4D3E]">
               <a
-                href="https://corrigo.nl"
+                href={PRODUCTS[0].href}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex cursor-pointer flex-col border-b border-[#1B4D3E] p-12 transition-colors duration-300 hover:bg-[#c9a961] hover:text-[#1B4D3E] md:p-16 lg:border-b-0"
               >
                 <p className="eyebrow text-[#5a5a52] transition-colors group-hover:text-[#1B4D3E]/75">
-                  Bent u docent of schoolleider?
+                  Docent of schoolleider in het vo?
                 </p>
                 <p
                   className="font-display mt-10 text-[clamp(3.5rem,9vw,7rem)] font-medium leading-[0.92] tracking-[-0.04em] text-[#1B4D3E]"
@@ -375,7 +396,38 @@ export default function Home() {
               </a>
 
               <a
-                href="https://nexusacademy.nl"
+                href={PRODUCTS[1].href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex cursor-pointer flex-col border-b border-[#1B4D3E] p-12 transition-colors duration-300 hover:bg-[#4a7c9e] hover:text-[#f5f1e8] md:p-16 lg:border-b-0"
+              >
+                <p className="eyebrow text-[#5a5a52] transition-colors group-hover:text-[#f5f1e8]/75">
+                  Docent in po of onderbouw vo?
+                </p>
+                <p
+                  className="font-display mt-10 text-[clamp(3.5rem,9vw,7rem)] font-medium leading-[0.92] tracking-[-0.04em] text-[#1B4D3E] transition-colors group-hover:text-[#f5f1e8]"
+                  style={{ fontVariationSettings: "'opsz' 144" }}
+                >
+                  Actuales
+                </p>
+                <p className="mt-8 max-w-md text-[17px] leading-[1.65] text-[#0a1a14] transition-colors group-hover:text-[#f5f1e8]">
+                  Elke week een compleet lespakket over het nieuws. Op
+                  actuales.nl vindt u presentaties, lesscripts, werkbladen op
+                  drie niveaus en quizzen, klaar voor digibord en print.
+                </p>
+                <span className="mt-12 inline-flex items-center gap-3 font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E] transition-colors group-hover:text-[#f5f1e8]">
+                  Naar actuales.nl
+                  <span
+                    aria-hidden="true"
+                    className="transition-transform group-hover:translate-x-1"
+                  >
+                    →
+                  </span>
+                </span>
+              </a>
+
+              <a
+                href={PRODUCTS[2].href}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex cursor-pointer flex-col p-12 transition-colors duration-300 hover:bg-[#e8873a] hover:text-[#1B4D3E] md:p-16"

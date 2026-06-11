@@ -14,13 +14,13 @@ import {
 export const metadata: Metadata = {
   title: "Roadmap",
   description:
-    "Waar Onderwijsbouwen, Corrigo en Nexus per kwartaal aan werken. Levend overzicht van ontwikkelingen.",
+    "Waar Onderwijsbouwen, Corrigo, Actuales en Nexus per kwartaal aan werken. Levend overzicht van ontwikkelingen.",
   alternates: { canonical: "/roadmap" },
   openGraph: {
     url: "/roadmap",
     title: "Roadmap | Onderwijsbouwen",
     description:
-      "Waar Onderwijsbouwen, Corrigo en Nexus per kwartaal aan werken. Levend overzicht van ontwikkelingen.",
+      "Waar Onderwijsbouwen, Corrigo, Actuales en Nexus per kwartaal aan werken. Levend overzicht van ontwikkelingen.",
   },
 };
 
@@ -39,6 +39,7 @@ const statusStyles: Record<RoadmapStatus, string> = {
 const productLabel: Record<RoadmapProduct, string> = {
   onderwijsbouwen: "Onderwijsbouwen",
   corrigo: "Corrigo",
+  actuales: "Actuales",
   nexus: "Nexus",
 };
 
@@ -76,7 +77,7 @@ export default function RoadmapPage() {
             aan bouwen.
           </>
         }
-        lead="Een levend overzicht van wat wij per kwartaal ontwikkelen voor Onderwijsbouwen, Corrigo en Nexus. Items zijn richtinggevend, geen contractuele toezegging."
+        lead="Een levend overzicht van wat wij per kwartaal ontwikkelen voor Onderwijsbouwen, Corrigo, Actuales en Nexus. Items zijn richtinggevend, geen contractuele toezegging."
       />
 
       <section className="border-t border-[#1B4D3E] bg-[#f5f1e8]">

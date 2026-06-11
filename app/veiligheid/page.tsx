@@ -210,7 +210,7 @@ export default function VeiligheidPage() {
 
           <p className="mt-8 max-w-3xl text-[15px] leading-[1.7] text-[#5a5a52]">
             Deze lijst wordt bijgewerkt bij elke wijziging. Het is mogelijk dat
-            een specifiek product (Corrigo, Nexus) niet alle bovenstaande
+            een specifiek product (Corrigo, Actuales, Nexus) niet alle bovenstaande
             sub-verwerkers gebruikt. Zie de productspecifieke
             verwerkersovereenkomst voor het exacte overzicht per dienst.
           </p>

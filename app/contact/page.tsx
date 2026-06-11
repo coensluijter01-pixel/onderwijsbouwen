@@ -27,7 +27,7 @@ const audiences = [
     number: "01",
     title: "Voor scholen",
     body: "Geïnteresseerd in een pilot of implementatie van Corrigo? Stuur een mail met de naam van uw school, het aantal docenten en de schaal die u voor ogen heeft. We reageren binnen twee werkdagen.",
-    link: { href: "/initiatieven", label: "Lees over Corrigo en Nexus" },
+    link: { href: "/initiatieven", label: "Lees over onze initiatieven" },
   },
   {
     number: "02",

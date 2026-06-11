@@ -3,7 +3,7 @@
 // dateringen op publieke pagina's, vooral voor items die "gepland" zijn.
 
 export type RoadmapStatus = "afgerond" | "in-uitvoering" | "gepland";
-export type RoadmapProduct = "onderwijsbouwen" | "corrigo" | "nexus";
+export type RoadmapProduct = "onderwijsbouwen" | "corrigo" | "actuales" | "nexus";
 
 export type RoadmapItem = {
   id: string;
@@ -16,6 +16,15 @@ export type RoadmapItem = {
 
 export const roadmap: RoadmapItem[] = [
   // Q2 2026
+  {
+    id: "q2-2026-actuales-launch",
+    kwartaal: "Q2 2026",
+    product: "actuales",
+    titel: "Actuales live",
+    beschrijving:
+      "Lancering van Actuales: wekelijkse lespakketten over actueel nieuws voor po en onderbouw vo, met presentatie, lesscript, werkbladen en quiz.",
+    status: "afgerond",
+  },
   {
     id: "q2-2026-onderwijsbouwen-site",
     kwartaal: "Q2 2026",
@@ -56,4 +65,4 @@ export const roadmap: RoadmapItem[] = [
   },
 ];
 
-export const roadmapBijgewerkt = "2026-05-20";
+export const roadmapBijgewerkt = "2026-06-11";

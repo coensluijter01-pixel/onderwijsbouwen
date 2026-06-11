@@ -55,7 +55,7 @@ export default function ProjectenPage() {
             en waarheen.
           </>
         }
-        lead="Onderwijsbouwen is een groeiende organisatie. Onze huidige initiatieven, Corrigo en Nexus Academy, zijn de eerste twee bouwstenen van een breder portfolio dat in de komende jaren stap voor stap zichtbaar wordt. Wat we bouwen is geen verzameling losse producten maar een samenhangende benadering van de drie krachten die het Nederlandse onderwijs onder druk zetten."
+        lead="Onderwijsbouwen is een groeiende organisatie. Onze huidige initiatieven, Corrigo, Actuales en Nexus Academy, zijn de eerste drie bouwstenen van een breder portfolio dat in de komende jaren stap voor stap zichtbaar wordt. Wat we bouwen is geen verzameling losse producten maar een samenhangende benadering van de drie krachten die het Nederlandse onderwijs onder druk zetten."
       />
 
       <section className="border-t border-[#1B4D3E] bg-[#f5f1e8]">
@@ -129,7 +129,7 @@ export default function ProjectenPage() {
           <div className="lg:col-span-7 lg:pt-2">
             <div className="space-y-6 text-[19px] leading-[1.7] text-[#0a1a14]">
               <p>
-                Onze ambitie reikt verder dan twee initiatieven. We werken
+                Onze ambitie reikt verder dan drie initiatieven. We werken
                 vanuit Nederland en richten ons in eerste instantie op de
                 Nederlandse en West-Europese onderwijsmarkt. Op termijn
                 breiden we uit naar Vlaanderen en de bredere Europese context,

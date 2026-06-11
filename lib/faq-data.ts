@@ -17,7 +17,7 @@ export type FaqItem = {
 
 export const faqCategorieLabels: Record<FaqCategorie, string> = {
   "over-onderwijsbouwen": "Over Onderwijsbouwen",
-  producten: "Over Corrigo en Nexus",
+  producten: "Over onze initiatieven",
   "privacy-en-veiligheid": "Privacy en veiligheid",
   samenwerken: "Samenwerken",
   "werken-bij": "Werken bij",
@@ -61,20 +61,27 @@ export const faq: FaqItem[] = [
     antwoord:
       "Onze vestiging staat in Rotterdam. We werken samen met scholen in de Haaglanden en daarbuiten.",
   },
-  // Over Corrigo en Nexus
+  // Over onze initiatieven
   {
-    id: "relatie-corrigo-nexus",
+    id: "relatie-initiatieven",
     categorie: "producten",
-    vraag: "Wat is de relatie tussen Onderwijsbouwen, Corrigo en Nexus?",
+    vraag: "Wat is de relatie tussen Onderwijsbouwen, Corrigo, Actuales en Nexus?",
     antwoord:
-      'Onderwijsbouwen is het overkoepelende bedrijf. <a href="https://corrigo.nl">Corrigo</a> en <a href="https://nexusacademy.nl">Nexus</a> zijn twee initiatieven die wij ontwikkelen, elk met een eigen doelgroep en website.',
+      'Onderwijsbouwen is het overkoepelende bedrijf. <a href="https://corrigo.nl">Corrigo</a>, <a href="https://actuales.nl">Actuales</a> en <a href="https://nexusacademy.nl">Nexus</a> zijn drie initiatieven die wij ontwikkelen, elk met een eigen doelgroep en website.',
   },
   {
-    id: "verschil-corrigo-nexus",
+    id: "verschil-initiatieven",
     categorie: "producten",
-    vraag: "Wat is het verschil tussen Corrigo en Nexus?",
+    vraag: "Wat is het verschil tussen Corrigo, Actuales en Nexus?",
     antwoord:
-      "Corrigo is een nakijk- en toetsbouwtool voor docenten in het voortgezet onderwijs. Nexus is een leerplatform in ontwikkeling voor leerlingen. Beide initiatieven delen hetzelfde uitgangspunt: de docent en de school houden de regie.",
+      "Corrigo is een nakijk- en toetsbouwtool voor docenten in het voortgezet onderwijs. Actuales levert wekelijks kant-en-klare lespakketten over actueel nieuws voor po en onderbouw vo. Nexus is een leerplatform in ontwikkeling voor leerlingen. Alle initiatieven delen hetzelfde uitgangspunt: de docent en de school houden de regie.",
+  },
+  {
+    id: "wat-is-actuales",
+    categorie: "producten",
+    vraag: "Wat is Actuales?",
+    antwoord:
+      '<a href="https://actuales.nl">Actuales</a> maakt van elke grote nieuwsgebeurtenis een compleet lespakket: presentatie, lesscript, werkbladen op drie niveaus met NT2-taalsteun, quiz en een nieuwsfragment met kijkvragen. Elke week een nieuwe editie, voor groep 5 tot en met 8 en de onderbouw van het vo.',
   },
   {
     id: "is-nexus-live",

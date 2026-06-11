@@ -4,21 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import { NAV_LINKS } from "@/lib/constants";
-
-const EXTERNAL = [
-  {
-    label: "Corrigo",
-    href: "https://corrigo.nl",
-    hover: "hover:bg-[#c9a961] hover:text-[#1B4D3E] hover:border-[#c9a961]",
-  },
-  {
-    label: "Nexus",
-    href: "https://nexusacademy.nl",
-    hover:
-      "hover:bg-[#e8873a] hover:text-[#1B4D3E] hover:border-[#e8873a]",
-  },
-];
+import { EXTERNAL_INITIATIVES, NAV_LINKS } from "@/lib/constants";
 
 export function LandingHeader() {
   const pathname = usePathname();
@@ -88,7 +74,7 @@ export function LandingHeader() {
           </nav>
 
           <div className="flex items-center gap-2.5">
-            {EXTERNAL.map((ext) => (
+            {EXTERNAL_INITIATIVES.map((ext) => (
               <a
                 key={ext.href}
                 href={ext.href}
@@ -143,8 +129,8 @@ export function LandingHeader() {
             <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#f5f1e8]/60">
               Naar onze initiatieven
             </p>
-            <div className="mt-3 grid grid-cols-2 gap-2">
-              {EXTERNAL.map((ext) => (
+            <div className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-3">
+              {EXTERNAL_INITIATIVES.map((ext) => (
                 <a
                   key={ext.href}
                   href={ext.href}

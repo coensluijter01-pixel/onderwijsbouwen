@@ -29,14 +29,14 @@ const audiences: { num: string; label: string; body: string; cta: AudienceCta }[
     {
       num: "01",
       label: "Scholen en schoolleiders",
-      body: "We werken samen met scholen die hun docenten willen ontlasten en hun leerlingen serieus willen nemen. Corrigo wordt op dit moment gebruikt door middelbare scholen door heel Nederland, en het portfolio breidt uit. Voor schoolleiders die geïnteresseerd zijn in een pilot, een schoolbrede implementatie of een gesprek over wat AI-tools in hun specifieke context kunnen betekenen, zijn we direct benaderbaar via de Corrigo-site.",
+      body: "We werken samen met scholen die hun docenten willen ontlasten en hun leerlingen serieus willen nemen. Corrigo wordt op dit moment gebruikt door middelbare scholen door heel Nederland. Actuales helpt scholen actueel nieuws structureel in het rooster te brengen, voor po en onderbouw vo. Voor schoolleiders die geïnteresseerd zijn in een pilot, een schoolbrede implementatie of een gesprek over wat onze tools in hun specifieke context kunnen betekenen, zijn we direct benaderbaar via de productsites.",
       cta: { text: "Naar corrigo.nl", href: "https://corrigo.nl", external: true },
     },
     {
       num: "02",
       label: "Docenten",
-      body: "Docenten zijn ons belangrijkste startpunt. Beide initiatieven zijn ontwikkeld in nauw contact met leraren in het voortgezet onderwijs, en we blijven afhankelijk van hun feedback om relevant te blijven. We zoeken docenten die hun werkpraktijk willen delen, ideeën hebben voor verbeteringen, of die kritisch willen meekijken bij ontwikkeling. Aanmeldingen voor pilot-trajecten worden actief gezocht.",
-      cta: { text: "Probeer Corrigo", href: "https://corrigo.nl", external: true },
+      body: "Docenten zijn ons belangrijkste startpunt. Onze initiatieven zijn ontwikkeld in nauw contact met leraren in po en vo, en we blijven afhankelijk van hun feedback om relevant te blijven. Docenten in het vo kunnen Corrigo proberen. Docenten in po en onderbouw vo vinden op Actuales wekelijks kant-en-klare lespakketten over actueel nieuws. We zoeken docenten die hun werkpraktijk willen delen of kritisch willen meekijken bij ontwikkeling.",
+      cta: { text: "Bekijk Actuales", href: "https://actuales.nl", external: true },
     },
     {
       num: "03",

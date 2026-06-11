@@ -6,6 +6,7 @@ import {
   KVK_NUMBER,
   MORE_LINKS,
   NAV_LINKS,
+  PRODUCTS,
   VESTIGING,
 } from "@/lib/constants";
 
@@ -50,66 +51,18 @@ export function LandingFooter() {
           <div className="lg:col-span-2">
             <p className="eyebrow text-[#1B4D3E]">Initiatieven</p>
             <ul className="mt-6 space-y-3">
-              <li>
-                <a
-                  href="https://corrigo.nl"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm font-medium text-[#0a1a14] hover:text-[#c9a961]"
-                >
-                  Corrigo ↗
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://corrigo.nl"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-[#5a5a52] hover:text-[#c9a961]"
-                >
-                  Voor scholen
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://corrigo.nl"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-[#5a5a52] hover:text-[#c9a961]"
-                >
-                  Pilot aanvragen
-                </a>
-              </li>
-              <li className="pt-3">
-                <a
-                  href="https://nexusacademy.nl"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm font-medium text-[#0a1a14] hover:text-[#c9a961]"
-                >
-                  Nexus Academy ↗
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://nexusacademy.nl"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-[#5a5a52] hover:text-[#c9a961]"
-                >
-                  Voor leerlingen
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://nexusacademy.nl"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-[#5a5a52] hover:text-[#c9a961]"
-                >
-                  Direct beginnen
-                </a>
-              </li>
+              {PRODUCTS.map((product, idx) => (
+                <li key={product.domain} className={idx > 0 ? "pt-3" : undefined}>
+                  <a
+                    href={product.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-medium text-[#0a1a14] hover:text-[#c9a961]"
+                  >
+                    {product.name} ↗
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 

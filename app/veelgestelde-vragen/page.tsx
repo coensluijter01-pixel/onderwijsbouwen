@@ -12,13 +12,13 @@ import {
 export const metadata: Metadata = {
   title: "Veelgestelde vragen",
   description:
-    "Antwoorden op vragen over Onderwijsbouwen, Corrigo, Nexus, privacy en samenwerken.",
+    "Antwoorden op vragen over Onderwijsbouwen, Corrigo, Actuales, Nexus, privacy en samenwerken.",
   alternates: { canonical: "/veelgestelde-vragen" },
   openGraph: {
     url: "/veelgestelde-vragen",
     title: "Veelgestelde vragen | Onderwijsbouwen",
     description:
-      "Antwoorden op vragen over Onderwijsbouwen, Corrigo, Nexus, privacy en samenwerken.",
+      "Antwoorden op vragen over Onderwijsbouwen, Corrigo, Actuales, Nexus, privacy en samenwerken.",
   },
 };
 
@@ -59,7 +59,7 @@ export default function VeelgesteldeVragenPage() {
             gestelde vragen.
           </>
         }
-        lead="Vragen over Onderwijsbouwen, onze initiatieven Corrigo en Nexus, privacy, samenwerken of werken bij ons."
+        lead="Vragen over Onderwijsbouwen, onze initiatieven Corrigo, Actuales en Nexus, privacy, samenwerken of werken bij ons."
       />
 
       <section className="border-t border-[#1B4D3E] bg-[#f5f1e8]">
