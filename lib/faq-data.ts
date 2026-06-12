@@ -1,4 +1,3 @@
-// TODO @gebruiker: bekijk en verfijn antwoorden voor go-live.
 // FAQ-categorieën spiegelen de structuur van de site.
 
 export type FaqCategorie =
@@ -38,7 +37,7 @@ export const faq: FaqItem[] = [
     categorie: "over-onderwijsbouwen",
     vraag: "Wat is Onderwijsbouwen?",
     antwoord:
-      "Onderwijsbouwen is een Nederlandse onderwijssoftware-studio, gevestigd in Rotterdam. Wij ontwikkelen tools en initiatieven voor primair en voortgezet onderwijs in Nederland.",
+      'Onderwijsbouwen is een Nederlandse onderwijssoftware-studio, gevestigd in Rotterdam. Wij ontwikkelen drie initiatieven voor primair en voortgezet onderwijs: <a href="https://corrigo.nl">Corrigo</a>, <a href="https://actuales.nl">Actuales</a> en <a href="https://nexusacademy.nl">Nexus</a>.',
   },
   {
     id: "wanneer-opgericht",
@@ -60,6 +59,13 @@ export const faq: FaqItem[] = [
     vraag: "Waar zijn jullie gevestigd?",
     antwoord:
       "Onze vestiging staat in Rotterdam. We werken samen met scholen in de Haaglanden en daarbuiten.",
+  },
+  {
+    id: "roadmap-changelog",
+    categorie: "over-onderwijsbouwen",
+    vraag: "Waar vind ik jullie plannen en mijlpalen?",
+    antwoord:
+      'Onze richting per kwartaal staat op de <a href="/roadmap">roadmap</a>. Afgeronde mijlpalen en releases vindt u in de <a href="/changelog">changelog</a>. Beide pagina\'s worden bijgewerkt zodra er nieuwe ontwikkelingen zijn.',
   },
   // Over onze initiatieven
   {
@@ -84,6 +90,13 @@ export const faq: FaqItem[] = [
       '<a href="https://corrigo.nl">Corrigo</a> is een AI-nakijk- en toetsbouwtool voor docenten in het voortgezet onderwijs. De tool automatiseert het corrigeren van open vragen, essays en toetsen, levert consistente feedback per leerling en geeft inzicht in waar de klas vastloopt. Docenten houden de regie; Corrigo werkt naast hen, niet in plaats van hen.',
   },
   {
+    id: "is-corrigo-beschikbaar",
+    categorie: "producten",
+    vraag: "Is Corrigo al beschikbaar?",
+    antwoord:
+      'Ja. <a href="https://corrigo.nl">Corrigo</a> is live voor docenten in het voortgezet onderwijs en wordt gebruikt op middelbare scholen in Nederland. Scholen die een pilot of implementatie willen bespreken, kunnen starten via corrigo.nl of mailen naar <a href="mailto:contact@onderwijsbouwen.nl">contact@onderwijsbouwen.nl</a>.',
+  },
+  {
     id: "wat-is-actuales",
     categorie: "producten",
     vraag: "Wat is Actuales?",
@@ -96,6 +109,13 @@ export const faq: FaqItem[] = [
     vraag: "Is Actuales al beschikbaar?",
     antwoord:
       'Ja. <a href="https://actuales.nl">Actuales</a> is live en elke week beschikbaar voor docenten in po en onderbouw vo. Scholen die Actuales schoolbreed willen inzetten of een pilot willen bespreken, kunnen mailen naar <a href="mailto:contact@onderwijsbouwen.nl">contact@onderwijsbouwen.nl</a>.',
+  },
+  {
+    id: "wat-is-nexus",
+    categorie: "producten",
+    vraag: "Wat is Nexus?",
+    antwoord:
+      '<a href="https://nexusacademy.nl">Nexus Academy</a> is een leerplatform in ontwikkeling voor leerlingen in het voortgezet onderwijs. Het biedt persoonlijke begeleiding via een AI-leercoach die uitlegt, doorvraagt en meedenkt op het niveau van de leerling. Het platform is opgezet vanuit het principe dat kwalitatieve begeleiding niet afhankelijk hoort te zijn van wat ouders kunnen betalen.',
   },
   {
     id: "is-nexus-live",

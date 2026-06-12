@@ -1,6 +1,5 @@
-// TODO @gebruiker: verifieer en pas items aan voor go-live.
-// Roadmaps zijn richtinggevend, niet contractueel. Wees voorzichtig met
-// dateringen op publieke pagina's, vooral voor items die "gepland" zijn.
+// Roadmaps zijn richtinggevend, niet contractueel. Dateringen op publieke
+// pagina's zijn indicatief, vooral voor items met status "gepland".
 
 export type RoadmapStatus = "afgerond" | "in-uitvoering" | "gepland";
 export type RoadmapProduct = "onderwijsbouwen" | "corrigo" | "actuales" | "nexus";
@@ -17,6 +16,15 @@ export type RoadmapItem = {
 export const roadmap: RoadmapItem[] = [
   // Q2 2026
   {
+    id: "q2-2026-onderwijsbouwen-site",
+    kwartaal: "Q2 2026",
+    product: "onderwijsbouwen",
+    titel: "Corporate site met drie initiatieven",
+    beschrijving:
+      "Herziene corporate site met volledige positionering van Corrigo, Actuales en Nexus. Nieuwe pagina's voor over, veiligheid en pers, plus data-gedreven roadmap en changelog.",
+    status: "afgerond",
+  },
+  {
     id: "q2-2026-actuales-launch",
     kwartaal: "Q2 2026",
     product: "actuales",
@@ -25,6 +33,7 @@ export const roadmap: RoadmapItem[] = [
       "Lancering van Actuales: wekelijkse lespakketten over actueel nieuws voor po en onderbouw vo, met presentatie, lesscript, werkbladen op drie niveaus, NT2-taalsteun, quiz en nieuwsfragment.",
     status: "afgerond",
   },
+  // Q3 2026
   {
     id: "q3-2026-actuales-edities",
     kwartaal: "Q3 2026",
@@ -44,16 +53,6 @@ export const roadmap: RoadmapItem[] = [
     status: "in-uitvoering",
   },
   {
-    id: "q2-2026-onderwijsbouwen-site",
-    kwartaal: "Q2 2026",
-    product: "onderwijsbouwen",
-    titel: "Nieuwe corporate site live",
-    beschrijving:
-      "Herziene corporate site met volledige positionering, drie nieuwe structurele pagina's (over, veiligheid, pers) en een data-gedreven roadmap en changelog.",
-    status: "afgerond",
-  },
-  // Q3 2026
-  {
     id: "q3-2026-nexus-beta",
     kwartaal: "Q3 2026",
     product: "nexus",
@@ -63,15 +62,6 @@ export const roadmap: RoadmapItem[] = [
     status: "in-uitvoering",
   },
   // Q4 2026
-  {
-    id: "q4-2026-nexus-publiek",
-    kwartaal: "Q4 2026",
-    product: "nexus",
-    titel: "Nexus publieke lancering",
-    beschrijving:
-      "Bredere beschikbaarheid van Nexus voor het voortgezet onderwijs in Nederland.",
-    status: "gepland",
-  },
   {
     id: "q4-2026-actuales-scholen",
     kwartaal: "Q4 2026",
@@ -91,6 +81,15 @@ export const roadmap: RoadmapItem[] = [
     status: "gepland",
   },
   {
+    id: "q4-2026-nexus-publiek",
+    kwartaal: "Q4 2026",
+    product: "nexus",
+    titel: "Nexus publieke lancering",
+    beschrijving:
+      "Bredere beschikbaarheid van Nexus voor het voortgezet onderwijs in Nederland.",
+    status: "gepland",
+  },
+  {
     id: "q4-2026-onderwijsbouwen-uitbreiding",
     kwartaal: "Q4 2026",
     product: "onderwijsbouwen",
@@ -101,4 +100,4 @@ export const roadmap: RoadmapItem[] = [
   },
 ];
 
-export const roadmapBijgewerkt = "2026-06-11";
+export const roadmapBijgewerkt = "2026-06-12";
