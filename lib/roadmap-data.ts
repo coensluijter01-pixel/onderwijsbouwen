@@ -22,8 +22,26 @@ export const roadmap: RoadmapItem[] = [
     product: "actuales",
     titel: "Actuales live",
     beschrijving:
-      "Lancering van Actuales: wekelijkse lespakketten over actueel nieuws voor po en onderbouw vo, met presentatie, lesscript, werkbladen en quiz.",
+      "Lancering van Actuales: wekelijkse lespakketten over actueel nieuws voor po en onderbouw vo, met presentatie, lesscript, werkbladen op drie niveaus, NT2-taalsteun, quiz en nieuwsfragment.",
     status: "afgerond",
+  },
+  {
+    id: "q3-2026-actuales-edities",
+    kwartaal: "Q3 2026",
+    product: "actuales",
+    titel: "Doorlopende wekelijkse edities",
+    beschrijving:
+      "Wekelijkse lespakketten en extra edities bij groot nieuws, met doorontwikkeling op basis van feedback van docenten in po en onderbouw vo.",
+    status: "in-uitvoering",
+  },
+  {
+    id: "q3-2026-corrigo-uitrol",
+    kwartaal: "Q3 2026",
+    product: "corrigo",
+    titel: "Uitrol en doorontwikkeling op middelbare scholen",
+    beschrijving:
+      "Verdere implementatie van Corrigo op middelbare scholen in Nederland, met verbeteringen aan nakijkkwaliteit, toetsbouw en schoolrapportage op basis van pilot-feedback.",
+    status: "in-uitvoering",
   },
   {
     id: "q2-2026-onderwijsbouwen-site",
@@ -52,6 +70,24 @@ export const roadmap: RoadmapItem[] = [
     titel: "Nexus publieke lancering",
     beschrijving:
       "Bredere beschikbaarheid van Nexus voor het voortgezet onderwijs in Nederland.",
+    status: "gepland",
+  },
+  {
+    id: "q4-2026-actuales-scholen",
+    kwartaal: "Q4 2026",
+    product: "actuales",
+    titel: "Schoolbrede pilots en vakuitbreiding",
+    beschrijving:
+      "Pilots met scholen die Actuales structureel in het rooster willen inzetten, en uitbreiding van het aanbod naar aanvullende vakken en niveaus binnen po en onderbouw vo.",
+    status: "gepland",
+  },
+  {
+    id: "q4-2026-corrigo-scholen",
+    kwartaal: "Q4 2026",
+    product: "corrigo",
+    titel: "Schoolbrede implementaties",
+    beschrijving:
+      "Implementatietrajecten voor scholen die Corrigo op vakgroep- of schoolniveau willen inzetten, inclusief begeleiding bij invoering.",
     status: "gepland",
   },
   {

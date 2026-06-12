@@ -20,7 +20,7 @@ export const changelog: ChangelogItem[] = [
     type: "actuales",
     titel: "Actuales live",
     beschrijving:
-      "Lancering van Actuales: wekelijkse lespakketten over actueel nieuws voor po en onderbouw vo. Presentatie, lesscript, werkbladen op drie niveaus, quiz en nieuwsfragment, klaar voor digibord en print.",
+      "Lancering van Actuales: wekelijkse lespakketten over actueel nieuws voor po en onderbouw vo. Presentatie, lesscript, werkbladen op drie niveaus met NT2-taalsteun, quiz en nieuwsfragment met kijkvragen, klaar voor digibord en print. Bij groot nieuws verschijnt een extra editie.",
     link: "https://actuales.nl",
   },
   {

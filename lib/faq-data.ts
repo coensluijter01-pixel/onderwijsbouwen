@@ -38,7 +38,7 @@ export const faq: FaqItem[] = [
     categorie: "over-onderwijsbouwen",
     vraag: "Wat is Onderwijsbouwen?",
     antwoord:
-      "Onderwijsbouwen is een Nederlandse onderwijssoftware-studio, gevestigd in Rotterdam. Wij ontwikkelen tools en initiatieven voor het voortgezet onderwijs.",
+      "Onderwijsbouwen is een Nederlandse onderwijssoftware-studio, gevestigd in Rotterdam. Wij ontwikkelen tools en initiatieven voor primair en voortgezet onderwijs in Nederland.",
   },
   {
     id: "wanneer-opgericht",
@@ -77,11 +77,25 @@ export const faq: FaqItem[] = [
       "Corrigo is een nakijk- en toetsbouwtool voor docenten in het voortgezet onderwijs. Actuales levert wekelijks kant-en-klare lespakketten over actueel nieuws voor po en onderbouw vo. Nexus is een leerplatform in ontwikkeling voor leerlingen. Alle initiatieven delen hetzelfde uitgangspunt: de docent en de school houden de regie.",
   },
   {
+    id: "wat-is-corrigo",
+    categorie: "producten",
+    vraag: "Wat is Corrigo?",
+    antwoord:
+      '<a href="https://corrigo.nl">Corrigo</a> is een AI-nakijk- en toetsbouwtool voor docenten in het voortgezet onderwijs. De tool automatiseert het corrigeren van open vragen, essays en toetsen, levert consistente feedback per leerling en geeft inzicht in waar de klas vastloopt. Docenten houden de regie; Corrigo werkt naast hen, niet in plaats van hen.',
+  },
+  {
     id: "wat-is-actuales",
     categorie: "producten",
     vraag: "Wat is Actuales?",
     antwoord:
-      '<a href="https://actuales.nl">Actuales</a> maakt van elke grote nieuwsgebeurtenis een compleet lespakket: presentatie, lesscript, werkbladen op drie niveaus met NT2-taalsteun, quiz en een nieuwsfragment met kijkvragen. Elke week een nieuwe editie, voor groep 5 tot en met 8 en de onderbouw van het vo.',
+      '<a href="https://actuales.nl">Actuales</a> maakt van elke grote nieuwsgebeurtenis een compleet lespakket: presentatie, lesscript, werkbladen op drie niveaus met NT2-taalsteun, quiz en een nieuwsfragment met kijkvragen. Elke week een nieuwe editie, en bij groot nieuws een extra editie. Actuales is ontwikkeld voor groep 5 tot en met 8 en de onderbouw van het vo, voor vakken als aardrijkskunde, burgerschap, geschiedenis en mentorles.',
+  },
+  {
+    id: "is-actuales-beschikbaar",
+    categorie: "producten",
+    vraag: "Is Actuales al beschikbaar?",
+    antwoord:
+      'Ja. <a href="https://actuales.nl">Actuales</a> is live en elke week beschikbaar voor docenten in po en onderbouw vo. Scholen die Actuales schoolbreed willen inzetten of een pilot willen bespreken, kunnen mailen naar <a href="mailto:contact@onderwijsbouwen.nl">contact@onderwijsbouwen.nl</a>.',
   },
   {
     id: "is-nexus-live",
@@ -118,7 +132,7 @@ export const faq: FaqItem[] = [
     categorie: "samenwerken",
     vraag: "Hoe kan mijn school een pilot starten?",
     antwoord:
-      'Wij werken graag samen met scholen die actief willen meedenken in de ontwikkeling. Neem contact op via <a href="mailto:contact@onderwijsbouwen.nl">contact@onderwijsbouwen.nl</a> en vermeld om welk product het gaat en wie er vanuit de school betrokken is.',
+      'Voor het voortgezet onderwijs: neem contact op voor een Corrigo-pilot of implementatie via <a href="https://corrigo.nl">corrigo.nl</a> of mail naar <a href="mailto:contact@onderwijsbouwen.nl">contact@onderwijsbouwen.nl</a> met schoolnaam, aantal docenten en gewenste schaal. Voor po en onderbouw vo: start direct op <a href="https://actuales.nl">actuales.nl</a> of mail voor een schoolbrede pilot. Vermeld in beide gevallen wie er vanuit de school betrokken is.',
   },
   {
     id: "onderzoek-samenwerking",
