@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { DarkCta } from "@/components/dark-cta";
 import { Pullquote } from "@/components/pullquote";
+import { AudienceRow, AudienceRowList } from "@/components/audience-row";
 import { SectionHero } from "@/components/section-hero";
 
 export const metadata: Metadata = {
@@ -109,56 +109,15 @@ export default function DoelgroepenPage() {
             </div>
           </div>
 
-          <ul className="mt-20 divide-y divide-[#1B4D3E] border-y border-[#1B4D3E]">
-            {audiences.map((a) => (
-              <li key={a.num}>
-                <div className="grid grid-cols-1 items-start gap-6 py-12 lg:grid-cols-[minmax(0,14rem)_minmax(0,1fr)_auto] lg:gap-8 xl:gap-12 lg:py-16">
-                  <div className="flex items-baseline gap-4 lg:pt-1">
-                    <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#5a5a52]">
-                      {a.num}
-                    </span>
-                    <h3 className="h-display-md text-[#1B4D3E]">
-                      {a.label}
-                    </h3>
-                  </div>
-                  <p className="min-w-0 text-[17px] leading-[1.7] text-[#0a1a14]">
-                    {a.body}
-                  </p>
-                  <div className="shrink-0 lg:pt-1">
-                    {a.cta.external ? (
-                      <a
-                        href={a.cta.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group inline-flex items-center gap-2 font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E] transition-colors hover:text-[#c9a961] xl:whitespace-nowrap"
-                      >
-                        {a.cta.text}
-                        <span
-                          aria-hidden="true"
-                          className="transition-transform group-hover:translate-x-1"
-                        >
-                          ↗
-                        </span>
-                      </a>
-                    ) : (
-                      <Link
-                        href={a.cta.href}
-                        className="group inline-flex items-center gap-2 font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E] transition-colors hover:text-[#c9a961] xl:whitespace-nowrap"
-                      >
-                        {a.cta.text}
-                        <span
-                          aria-hidden="true"
-                          className="transition-transform group-hover:translate-x-1"
-                        >
-                          →
-                        </span>
-                      </Link>
-                    )}
-                  </div>
-                </div>
-              </li>
-            ))}
-          </ul>
+          <div className="mt-20">
+            <AudienceRowList>
+              {audiences.map((a) => (
+                <li key={a.num}>
+                  <AudienceRow {...a} />
+                </li>
+              ))}
+            </AudienceRowList>
+          </div>
         </div>
       </section>
 

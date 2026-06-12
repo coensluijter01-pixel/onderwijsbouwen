@@ -6,7 +6,7 @@ type ProductColumnGridProps = {
 
 export function ProductColumnGrid({ children }: ProductColumnGridProps) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+    <div className="grid grid-cols-1 items-stretch md:grid-cols-2 xl:grid-cols-3">
       {children}
     </div>
   );
@@ -20,7 +20,7 @@ function columnBorderClass(index: number, total: number) {
     return "border-b border-[#1B4D3E] md:border-b-0";
   }
   if (total === 3 && index === 2) {
-    return "md:col-span-2 md:border-t xl:col-span-1 xl:border-t-0 xl:border-l border-[#1B4D3E]";
+    return "md:border-t xl:border-t-0 xl:border-l border-[#1B4D3E]";
   }
   return index < total - 1 ? "border-b border-[#1B4D3E]" : "";
 }
@@ -33,7 +33,7 @@ type ProductColumnItemProps = {
   children: ReactNode;
 } & Omit<ComponentPropsWithoutRef<"a">, "className" | "children">;
 
-const itemBase = "flex min-w-0 flex-col p-8 sm:p-10 xl:p-12";
+const itemBase = "flex h-full min-w-0 flex-col p-8 sm:p-10 xl:p-12";
 
 export function ProductColumnItem({
   index,

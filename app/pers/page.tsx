@@ -160,8 +160,8 @@ export default function PersPage() {
             </div>
           </div>
 
-          <div className="mt-20 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10">
-            <article className="flex flex-col border border-[#1B4D3E] bg-[#1B4D3E]/[0.03] p-8 sm:p-10">
+          <div className="mt-20 grid grid-cols-1 items-stretch gap-8 lg:grid-cols-2 lg:gap-10">
+            <article className="flex h-full min-w-0 flex-col border border-[#1B4D3E] bg-[#1B4D3E]/[0.03] p-8 sm:p-10">
               <div className="flex items-baseline justify-between gap-4">
                 <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E]">
                   Kort · circa 50 woorden
@@ -173,7 +173,7 @@ export default function PersPage() {
               </p>
             </article>
 
-            <article className="flex flex-col border border-[#1B4D3E] bg-[#1B4D3E]/[0.03] p-8 sm:p-10">
+            <article className="flex h-full min-w-0 flex-col border border-[#1B4D3E] bg-[#1B4D3E]/[0.03] p-8 sm:p-10">
               <div className="flex items-baseline justify-between gap-4">
                 <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E]">
                   Lang · circa 150 woorden
@@ -229,7 +229,7 @@ export default function PersPage() {
                 key={f.label}
                 className="grid grid-cols-1 items-baseline gap-4 py-6 lg:grid-cols-12 lg:gap-12"
               >
-                <dt className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#5a5a52] lg:col-span-4">
+                <dt className="shrink-0 font-mono text-[11px] uppercase tracking-[0.18em] text-[#5a5a52] lg:col-span-4">
                   {f.label}
                 </dt>
                 <dd className="break-words text-[17px] leading-[1.6] text-[#0a1a14] lg:col-span-8">
