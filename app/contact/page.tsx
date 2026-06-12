@@ -12,13 +12,13 @@ import {
 export const metadata: Metadata = {
   title: "Contact en samenwerking",
   description:
-    "Onderwijsbouwen is selectief in samenwerkingen maar wel serieus. Direct contact voor pilots, onderzoek, partnerships en pers.",
+    "Direct contact voor schoolpilots met Corrigo of Actuales, onderzoek, partnerships en pers. Onderwijsbouwen reageert binnen twee werkdagen.",
   alternates: { canonical: "/contact" },
   openGraph: {
     url: "/contact",
     title: "Contact en samenwerking | Onderwijsbouwen",
     description:
-      "Onderwijsbouwen is selectief in samenwerkingen maar wel serieus. Direct contact voor pilots, onderzoek, partnerships en pers.",
+      "Direct contact voor schoolpilots met Corrigo of Actuales, onderzoek, partnerships en pers. Onderwijsbouwen reageert binnen twee werkdagen.",
   },
 };
 
@@ -26,7 +26,7 @@ const audiences = [
   {
     number: "01",
     title: "Voor scholen",
-    body: "Geïnteresseerd in een pilot of implementatie van Corrigo? Stuur een mail met de naam van uw school, het aantal docenten en de schaal die u voor ogen heeft. We reageren binnen twee werkdagen.",
+    body: "Voor het voortgezet onderwijs: geïnteresseerd in een pilot of implementatie van Corrigo? Stuur een mail met schoolnaam, aantal docenten en de schaal die u voor ogen heeft. Voor po en onderbouw vo: start op actuales.nl of mail voor een schoolbrede pilot met Actuales. Vermeld in beide gevallen welk initiatief u wilt bespreken. We reageren binnen twee werkdagen.",
     link: { href: "/initiatieven", label: "Lees over onze initiatieven" },
   },
   {

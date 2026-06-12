@@ -22,7 +22,7 @@ const directions = [
   {
     number: "01",
     title: "Tijd voor docenten",
-    body: "De eerste richting van ons werk is gericht op het ontlasten van docenten. Werkdruk is geen luxeprobleem maar een directe oorzaak van uitval, vroegtijdige beëindiging van loopbanen en kwaliteitsverlies in de klas. Onze interventies in deze richting automatiseren of versimpelen de delen van het docentenwerk die het minst aan goed onderwijs bijdragen. Corrigo is daar het eerste antwoord op. Toekomstige initiatieven in deze richting werken aan andere repetitieve taken in het onderwijsproces.",
+    body: "De eerste richting van ons werk is gericht op het ontlasten van docenten. Werkdruk is geen luxeprobleem maar een directe oorzaak van uitval, vroegtijdige beëindiging van loopbanen en kwaliteitsverlies in de klas. Onze interventies in deze richting automatiseren of versimpelen de delen van het docentenwerk die het minst aan goed onderwijs bijdragen. Corrigo doet dat voor nakijken in het voortgezet onderwijs. Actuales doet dat voor actueel nieuws in po en onderbouw vo. Toekomstige initiatieven in deze richting werken aan andere repetitieve taken in het onderwijsproces.",
   },
   {
     number: "02",
