@@ -4,8 +4,14 @@ import { Button } from "@/components/button";
 import { DarkCta } from "@/components/dark-cta";
 import { NumberedStat } from "@/components/numbered-stat";
 import { Pullquote } from "@/components/pullquote";
+import {
+  ProductColumnGrid,
+  ProductColumnItem,
+} from "@/components/product-column-grid";
 import { SectionHero } from "@/components/section-hero";
 import { PRODUCTS, SITE_DESCRIPTION } from "@/lib/constants";
+
+const PRODUCT_COUNT = PRODUCTS.length;
 
 export const metadata: Metadata = {
   description: SITE_DESCRIPTION,
@@ -20,7 +26,7 @@ export const metadata: Metadata = {
 const homeProducts = [
   {
     name: "Corrigo",
-    audience: "Initiatief 01, voor docenten in het vo",
+    audience: "Initiatief 01 · docenten vo",
     tagline: "AI-nakijktool voor het voortgezet onderwijs",
     stat: "6 uur per week",
     statLabel: "die docenten gemiddeld terugkrijgen",
@@ -31,7 +37,7 @@ const homeProducts = [
   },
   {
     name: "Actuales",
-    audience: "Initiatief 02, voor docenten in po en onderbouw vo",
+    audience: "Initiatief 02 · po & onderbouw vo",
     tagline: "Wekelijkse lespakketten over actueel nieuws",
     stat: "Elke week",
     statLabel: "een compleet lespakket, klaar voor de klas",
@@ -42,7 +48,7 @@ const homeProducts = [
   },
   {
     name: "Nexus Academy",
-    audience: "Initiatief 03, voor leerlingen",
+    audience: "Initiatief 03 · leerlingen",
     tagline: "AI-leercoach voor leerlingen en studenten",
     stat: "24/7 beschikbaar",
     statLabel: "persoonlijke begeleiding, voor iedereen",
@@ -220,20 +226,19 @@ export default function Home() {
 
         <div className="border-t border-[#1B4D3E]">
           <div className="mx-auto w-full max-w-6xl">
-            <div className="grid grid-cols-1 lg:grid-cols-3 lg:divide-x lg:divide-[#1B4D3E]">
+            <ProductColumnGrid>
               {homeProducts.map((product, idx) => (
-                <a
+                <ProductColumnItem
                   key={product.domain}
+                  as="a"
+                  index={idx}
+                  total={PRODUCT_COUNT}
                   href={product.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`group flex cursor-pointer flex-col p-12 transition-colors duration-300 hover:bg-[#1B4D3E] hover:text-[#f5f1e8] md:p-16 ${
-                    idx < homeProducts.length - 1
-                      ? "border-b border-[#1B4D3E] lg:border-b-0"
-                      : ""
-                  }`}
+                  className="group cursor-pointer transition-colors duration-300 hover:bg-[#1B4D3E] hover:text-[#f5f1e8]"
                 >
-                  <p className="eyebrow text-[#5a5a52] transition-colors group-hover:text-[#f5f1e8]/60">
+                  <p className="eyebrow break-words text-[#5a5a52] transition-colors group-hover:text-[#f5f1e8]/60">
                     {product.audience}
                   </p>
                   <h3 className="h-display-md mt-6 text-[#1B4D3E] transition-colors group-hover:text-[#f5f1e8]">
@@ -244,10 +249,7 @@ export default function Home() {
                   </p>
 
                   <div className="mt-10 border-l-2 border-[#c9a961] pl-5 transition-colors group-hover:border-[#c9a961]">
-                    <p
-                      className="font-display text-[clamp(2.25rem,4.5vw,3.5rem)] font-medium leading-[0.95] tracking-[-0.03em] text-[#1B4D3E] transition-colors group-hover:text-[#c9a961]"
-                      style={{ fontVariationSettings: "'opsz' 96" }}
-                    >
+                    <p className="product-stat text-[#1B4D3E] transition-colors group-hover:text-[#c9a961]">
                       {product.stat}
                     </p>
                     <p className="mt-3 text-sm leading-[1.5] text-[#5a5a52] transition-colors group-hover:text-[#f5f1e8]/70">
@@ -255,10 +257,10 @@ export default function Home() {
                     </p>
                   </div>
 
-                  <p className="mt-10 max-w-md text-[17px] leading-[1.65] text-[#0a1a14] transition-colors group-hover:text-[#f5f1e8]">
+                  <p className="mt-10 text-[17px] leading-[1.65] text-[#0a1a14] transition-colors group-hover:text-[#f5f1e8]">
                     {product.body}
                   </p>
-                  <span className="mt-12 inline-flex items-center gap-2 text-sm font-semibold tracking-wide text-[#1B4D3E] transition-colors group-hover:text-[#c9a961]">
+                  <span className="mt-auto pt-12 inline-flex items-center gap-2 text-sm font-semibold tracking-wide text-[#1B4D3E] transition-colors group-hover:text-[#c9a961]">
                     {product.linkLabel}
                     <span
                       aria-hidden="true"
@@ -267,9 +269,9 @@ export default function Home() {
                       →
                     </span>
                   </span>
-                </a>
+                </ProductColumnItem>
               ))}
-            </div>
+            </ProductColumnGrid>
           </div>
         </div>
       </section>
@@ -362,29 +364,27 @@ export default function Home() {
 
         <div className="border-t border-[#1B4D3E]">
           <div className="mx-auto w-full max-w-6xl">
-            <div className="grid grid-cols-1 lg:grid-cols-3 lg:divide-x lg:divide-[#1B4D3E]">
-              <a
+            <ProductColumnGrid>
+              <ProductColumnItem
+                as="a"
+                index={0}
+                total={PRODUCT_COUNT}
                 href={PRODUCTS[0].href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex cursor-pointer flex-col border-b border-[#1B4D3E] p-12 transition-colors duration-300 hover:bg-[#c9a961] hover:text-[#1B4D3E] md:p-16 lg:border-b-0"
+                className="group cursor-pointer transition-colors duration-300 hover:bg-[#c9a961] hover:text-[#1B4D3E]"
               >
                 <p className="eyebrow text-[#5a5a52] transition-colors group-hover:text-[#1B4D3E]/75">
                   Docent of schoolleider in het vo?
                 </p>
-                <p
-                  className="font-display mt-10 text-[clamp(3.5rem,9vw,7rem)] font-medium leading-[0.92] tracking-[-0.04em] text-[#1B4D3E]"
-                  style={{ fontVariationSettings: "'opsz' 144" }}
-                >
-                  Corrigo
-                </p>
-                <p className="mt-8 max-w-md text-[17px] leading-[1.65] text-[#0a1a14]">
+                <p className="entry-title mt-10 text-[#1B4D3E]">Corrigo</p>
+                <p className="mt-8 text-[17px] leading-[1.65] text-[#0a1a14]">
                   Geef uw docententeam de tijd terug die in correctiewerk
                   verdwijnt. Op corrigo.nl kunt u een pilot aanvragen, de tool
                   in actie zien, of direct contact opnemen voor een
                   schoolbreed implementatietraject.
                 </p>
-                <span className="mt-12 inline-flex items-center gap-3 font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E]">
+                <span className="mt-auto pt-12 inline-flex items-center gap-3 font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E]">
                   Naar corrigo.nl
                   <span
                     aria-hidden="true"
@@ -393,29 +393,29 @@ export default function Home() {
                     →
                   </span>
                 </span>
-              </a>
+              </ProductColumnItem>
 
-              <a
+              <ProductColumnItem
+                as="a"
+                index={1}
+                total={PRODUCT_COUNT}
                 href={PRODUCTS[1].href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex cursor-pointer flex-col border-b border-[#1B4D3E] p-12 transition-colors duration-300 hover:bg-[#4a7c9e] hover:text-[#f5f1e8] md:p-16 lg:border-b-0"
+                className="group cursor-pointer transition-colors duration-300 hover:bg-[#4a7c9e] hover:text-[#f5f1e8]"
               >
                 <p className="eyebrow text-[#5a5a52] transition-colors group-hover:text-[#f5f1e8]/75">
                   Docent in po of onderbouw vo?
                 </p>
-                <p
-                  className="font-display mt-10 text-[clamp(3.5rem,9vw,7rem)] font-medium leading-[0.92] tracking-[-0.04em] text-[#1B4D3E] transition-colors group-hover:text-[#f5f1e8]"
-                  style={{ fontVariationSettings: "'opsz' 144" }}
-                >
+                <p className="entry-title mt-10 text-[#1B4D3E] transition-colors group-hover:text-[#f5f1e8]">
                   Actuales
                 </p>
-                <p className="mt-8 max-w-md text-[17px] leading-[1.65] text-[#0a1a14] transition-colors group-hover:text-[#f5f1e8]">
+                <p className="mt-8 text-[17px] leading-[1.65] text-[#0a1a14] transition-colors group-hover:text-[#f5f1e8]">
                   Elke week een compleet lespakket over het nieuws. Op
                   actuales.nl vindt u presentaties, lesscripts, werkbladen op
                   drie niveaus en quizzen, klaar voor digibord en print.
                 </p>
-                <span className="mt-12 inline-flex items-center gap-3 font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E] transition-colors group-hover:text-[#f5f1e8]">
+                <span className="mt-auto pt-12 inline-flex items-center gap-3 font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E] transition-colors group-hover:text-[#f5f1e8]">
                   Naar actuales.nl
                   <span
                     aria-hidden="true"
@@ -424,30 +424,28 @@ export default function Home() {
                     →
                   </span>
                 </span>
-              </a>
+              </ProductColumnItem>
 
-              <a
+              <ProductColumnItem
+                as="a"
+                index={2}
+                total={PRODUCT_COUNT}
                 href={PRODUCTS[2].href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex cursor-pointer flex-col p-12 transition-colors duration-300 hover:bg-[#e8873a] hover:text-[#1B4D3E] md:p-16"
+                className="group cursor-pointer transition-colors duration-300 hover:bg-[#e8873a] hover:text-[#1B4D3E]"
               >
                 <p className="eyebrow text-[#5a5a52] transition-colors group-hover:text-[#1B4D3E]/75">
                   Bent u ouder of leerling?
                 </p>
-                <p
-                  className="font-display mt-10 text-[clamp(3.5rem,9vw,7rem)] font-medium leading-[0.92] tracking-[-0.04em] text-[#1B4D3E]"
-                  style={{ fontVariationSettings: "'opsz' 144" }}
-                >
-                  Nexus
-                </p>
-                <p className="mt-8 max-w-md text-[17px] leading-[1.65] text-[#0a1a14]">
+                <p className="entry-title mt-10 text-[#1B4D3E]">Nexus</p>
+                <p className="mt-8 text-[17px] leading-[1.65] text-[#0a1a14]">
                   Begin direct op nexusacademy.nl. Geen wachtlijsten, geen
                   dure bijles-overeenkomsten, wel persoonlijke begeleiding die
                   meegroeit met de leerling. Voor zowel scholieren als
                   studenten.
                 </p>
-                <span className="mt-12 inline-flex items-center gap-3 font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E]">
+                <span className="mt-auto pt-12 inline-flex items-center gap-3 font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E]">
                   Naar nexusacademy.nl
                   <span
                     aria-hidden="true"
@@ -456,8 +454,8 @@ export default function Home() {
                     →
                   </span>
                 </span>
-              </a>
-            </div>
+              </ProductColumnItem>
+            </ProductColumnGrid>
           </div>
         </div>
       </section>
@@ -474,8 +472,8 @@ export default function Home() {
           <ul className="mt-20 divide-y divide-[#1B4D3E] border-y border-[#1B4D3E]">
             {audiences.map((a) => (
               <li key={a.num}>
-                <div className="grid grid-cols-1 items-start gap-6 py-12 lg:grid-cols-[200px_1fr_auto] lg:gap-12 lg:py-16">
-                  <div className="flex items-baseline gap-3 lg:pt-1">
+                <div className="grid grid-cols-1 items-start gap-6 py-12 lg:grid-cols-[minmax(0,11rem)_minmax(0,1fr)_auto] lg:gap-8 xl:gap-12 lg:py-16">
+                  <div className="flex min-w-0 flex-wrap items-baseline gap-x-3 gap-y-1 lg:pt-1">
                     <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#5a5a52]">
                       {a.num}
                     </span>
@@ -483,16 +481,16 @@ export default function Home() {
                       {a.label}
                     </span>
                   </div>
-                  <p className="text-[17px] leading-[1.65] text-[#0a1a14]">
+                  <p className="min-w-0 text-[17px] leading-[1.65] text-[#0a1a14]">
                     {a.body}
                   </p>
-                  <div className="lg:pt-1">
+                  <div className="shrink-0 lg:pt-1">
                     {a.cta.external ? (
                       <a
                         href={a.cta.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group inline-flex items-center gap-2 whitespace-nowrap font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E] transition-colors hover:text-[#c9a961]"
+                        className="group inline-flex items-center gap-2 font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E] transition-colors hover:text-[#c9a961] xl:whitespace-nowrap"
                       >
                         {a.cta.text}
                         <span
@@ -505,7 +503,7 @@ export default function Home() {
                     ) : (
                       <Link
                         href={a.cta.href}
-                        className="group inline-flex items-center gap-2 whitespace-nowrap font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E] transition-colors hover:text-[#c9a961]"
+                        className="group inline-flex items-center gap-2 font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E] transition-colors hover:text-[#c9a961] xl:whitespace-nowrap"
                       >
                         {a.cta.text}
                         <span

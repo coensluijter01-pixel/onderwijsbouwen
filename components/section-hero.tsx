@@ -52,7 +52,11 @@ export function SectionHero({
             {lead}
           </p>
         ) : null}
-        {cta ? <div className="mt-14 flex flex-wrap gap-4">{cta}</div> : null}
+        {cta ? (
+          <div className="mt-14 flex w-full max-w-3xl flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
+            {cta}
+          </div>
+        ) : null}
       </div>
     </section>
   );

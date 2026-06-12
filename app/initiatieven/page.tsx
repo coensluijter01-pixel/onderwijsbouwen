@@ -3,8 +3,14 @@ import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { DarkCta } from "@/components/dark-cta";
 import { Pullquote } from "@/components/pullquote";
+import {
+  ProductColumnGrid,
+  ProductColumnItem,
+} from "@/components/product-column-grid";
 import { SectionHero } from "@/components/section-hero";
 import { PRODUCTS } from "@/lib/constants";
+
+const PRODUCT_COUNT = PRODUCTS.length;
 
 export const metadata: Metadata = {
   title: "Initiatieven",
@@ -77,18 +83,17 @@ export default function InitiatievenPage() {
 
         <div className="border-t border-[#1B4D3E]">
           <div className="mx-auto w-full max-w-6xl">
-            <div className="grid grid-cols-1 lg:grid-cols-3 lg:divide-x lg:divide-[#1B4D3E]">
+            <ProductColumnGrid>
               {PRODUCTS.map((product, idx) => (
-                <article
+                <ProductColumnItem
                   key={product.domain}
-                  className={`flex flex-col p-12 md:p-16 ${
-                    idx < PRODUCTS.length - 1
-                      ? "border-b border-[#1B4D3E] lg:border-b-0"
-                      : ""
-                  }`}
+                  index={idx}
+                  total={PRODUCT_COUNT}
                 >
-                  <p className="eyebrow text-[#5a5a52]">{product.audience}</p>
-                  <h2 className="h-display-lg mt-6 text-[#1B4D3E]">
+                  <p className="eyebrow break-words text-[#5a5a52]">
+                    {product.audience}
+                  </p>
+                  <h2 className="h-display-md mt-6 text-[#1B4D3E]">
                     {product.name}
                   </h2>
                   <div className="mt-10 space-y-5 text-[17px] leading-[1.7] text-[#0a1a14]">
@@ -100,7 +105,7 @@ export default function InitiatievenPage() {
                     href={product.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group mt-12 inline-flex items-center gap-2 text-sm font-semibold tracking-wide text-[#1B4D3E] transition-colors hover:text-[#c9a961]"
+                    className="group mt-auto inline-flex items-center gap-2 pt-12 text-sm font-semibold tracking-wide text-[#1B4D3E] transition-colors hover:text-[#c9a961]"
                   >
                     Bezoek {product.domain}
                     <span
@@ -110,9 +115,9 @@ export default function InitiatievenPage() {
                       ↗
                     </span>
                   </a>
-                </article>
+                </ProductColumnItem>
               ))}
-            </div>
+            </ProductColumnGrid>
           </div>
         </div>
       </section>

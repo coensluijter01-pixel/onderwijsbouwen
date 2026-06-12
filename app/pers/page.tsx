@@ -232,7 +232,7 @@ export default function PersPage() {
                 <dt className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#5a5a52] lg:col-span-4">
                   {f.label}
                 </dt>
-                <dd className="text-[17px] leading-[1.6] text-[#0a1a14] lg:col-span-8">
+                <dd className="break-words text-[17px] leading-[1.6] text-[#0a1a14] lg:col-span-8">
                   {f.value}
                 </dd>
               </div>

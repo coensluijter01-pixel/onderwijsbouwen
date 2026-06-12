@@ -47,8 +47,8 @@ export function LandingHeader() {
           onderwijsbouwen
         </Link>
 
-        <div className="hidden items-center gap-8 md:flex">
-          <nav className="flex items-center gap-7">
+        <div className="hidden min-w-0 items-center gap-6 lg:flex xl:gap-8">
+          <nav className="flex min-w-0 items-center gap-5 xl:gap-7">
             {NAV_LINKS.map((link) => {
               const active = isActive(link.href);
               const num = link.num;
@@ -73,14 +73,14 @@ export function LandingHeader() {
             })}
           </nav>
 
-          <div className="flex items-center gap-2.5">
+          <div className="hidden shrink-0 items-center gap-2 xl:flex">
             {EXTERNAL_INITIATIVES.map((ext) => (
               <a
                 key={ext.href}
                 href={ext.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`inline-flex items-center gap-1.5 border px-3.5 py-2 font-mono text-[11px] font-medium uppercase tracking-[0.18em] transition-colors ${pillIdle} ${ext.hover}`}
+                className={`inline-flex items-center gap-1.5 whitespace-nowrap border px-3 py-2 font-mono text-[10px] font-medium uppercase tracking-[0.16em] transition-colors xl:px-3.5 xl:text-[11px] xl:tracking-[0.18em] ${pillIdle} ${ext.hover}`}
               >
                 {ext.label}
                 <span aria-hidden="true">↗</span>
@@ -94,14 +94,14 @@ export function LandingHeader() {
           aria-label={open ? "Sluit menu" : "Open menu"}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
-          className="inline-flex h-10 w-10 items-center justify-center text-[#f5f1e8] transition-colors md:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center text-[#f5f1e8] transition-colors lg:hidden"
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
       </div>
 
       {open ? (
-        <div className="border-t border-[#f5f1e8]/15 bg-[#1B4D3E] md:hidden">
+        <div className="border-t border-[#f5f1e8]/15 bg-[#1B4D3E] lg:hidden">
           <nav className="mx-auto flex w-full max-w-6xl flex-col px-6 py-4">
             {NAV_LINKS.map((link) => {
               const active = isActive(link.href);

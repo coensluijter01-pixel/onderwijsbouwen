@@ -112,7 +112,7 @@ export default function DoelgroepenPage() {
           <ul className="mt-20 divide-y divide-[#1B4D3E] border-y border-[#1B4D3E]">
             {audiences.map((a) => (
               <li key={a.num}>
-                <div className="grid grid-cols-1 items-start gap-6 py-12 lg:grid-cols-[260px_1fr_auto] lg:gap-12 lg:py-16">
+                <div className="grid grid-cols-1 items-start gap-6 py-12 lg:grid-cols-[minmax(0,14rem)_minmax(0,1fr)_auto] lg:gap-8 xl:gap-12 lg:py-16">
                   <div className="flex items-baseline gap-4 lg:pt-1">
                     <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#5a5a52]">
                       {a.num}
@@ -121,16 +121,16 @@ export default function DoelgroepenPage() {
                       {a.label}
                     </h3>
                   </div>
-                  <p className="text-[17px] leading-[1.7] text-[#0a1a14]">
+                  <p className="min-w-0 text-[17px] leading-[1.7] text-[#0a1a14]">
                     {a.body}
                   </p>
-                  <div className="lg:pt-1">
+                  <div className="shrink-0 lg:pt-1">
                     {a.cta.external ? (
                       <a
                         href={a.cta.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group inline-flex items-center gap-2 whitespace-nowrap font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E] transition-colors hover:text-[#c9a961]"
+                        className="group inline-flex items-center gap-2 font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E] transition-colors hover:text-[#c9a961] xl:whitespace-nowrap"
                       >
                         {a.cta.text}
                         <span
@@ -143,7 +143,7 @@ export default function DoelgroepenPage() {
                     ) : (
                       <Link
                         href={a.cta.href}
-                        className="group inline-flex items-center gap-2 whitespace-nowrap font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E] transition-colors hover:text-[#c9a961]"
+                        className="group inline-flex items-center gap-2 font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E] transition-colors hover:text-[#c9a961] xl:whitespace-nowrap"
                       >
                         {a.cta.text}
                         <span

@@ -138,9 +138,9 @@ export default function RoadmapPage() {
                   {group.items.map((item) => (
                     <li
                       key={item.id}
-                      className="grid grid-cols-1 gap-6 py-8 lg:grid-cols-12 lg:gap-10"
+                      className="grid min-w-0 grid-cols-1 gap-6 py-8 lg:grid-cols-12 lg:gap-10"
                     >
-                      <div className="lg:col-span-3">
+                      <div className="min-w-0 lg:col-span-3">
                         <div className="flex flex-wrap items-center gap-2">
                           <span
                             className={`inline-flex items-center px-2.5 py-1 font-mono text-[10px] font-semibold uppercase tracking-[0.18em] ${
@@ -154,7 +154,7 @@ export default function RoadmapPage() {
                           {productLabel[item.product]}
                         </p>
                       </div>
-                      <div className="lg:col-span-9">
+                      <div className="min-w-0 lg:col-span-9">
                         <h4 className="font-display text-[clamp(1.25rem,2.25vw,1.625rem)] font-medium leading-tight tracking-tight text-[#1B4D3E]">
                           {item.titel}
                         </h4>
