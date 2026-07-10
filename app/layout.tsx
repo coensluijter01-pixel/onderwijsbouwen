@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { DM_Sans, Fraunces, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { LandingHeader } from "@/components/landing-header";
@@ -76,8 +76,16 @@ export const metadata: Metadata = {
       follow: true,
       "max-image-preview": "large",
       "max-snippet": -1,
+      "max-video-preview": -1,
     },
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  colorScheme: "light",
+  themeColor: "#1B4D3E",
 };
 
 const organizationJsonLd = {

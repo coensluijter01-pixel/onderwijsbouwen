@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Verberg de framework-fingerprint; geen SEO-signaal, wel netter.
+  poweredByHeader: false,
 };
 
 export default nextConfig;
