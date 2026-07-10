@@ -59,7 +59,8 @@ const contactJsonLd = {
       email: CONTACT_EMAIL,
       contactType: "customer support",
       areaServed: "NL",
-      availableLanguage: "Dutch",
+      availableLanguage: ["nl", "Dutch"],
+      url: `${SITE_URL}/contact`,
     },
   },
 };
