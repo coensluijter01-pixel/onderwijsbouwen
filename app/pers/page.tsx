@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { CopyButton } from "@/components/copy-button";
 import { DarkCta } from "@/components/dark-cta";
@@ -261,20 +262,20 @@ export default function PersPage() {
                 Voor de feitelijke regels: opgericht, vestiging, KvK,
                 initiatieven en aansluitingen. Voor verdieping zie de
                 boilerplate hierboven of onze{" "}
-                <a
+                <Link
                   href="/over"
                   className="font-semibold text-[#1B4D3E] underline underline-offset-4 hover:text-[#c9a961]"
                 >
                   /over
-                </a>
+                </Link>
                 -pagina. Voor recente mijlpalen die nieuwswaardig kunnen zijn,
                 staat de actuele{" "}
-                <a
+                <Link
                   href="/changelog"
                   className="font-semibold text-[#1B4D3E] underline underline-offset-4 hover:text-[#c9a961]"
                 >
                   changelog
-                </a>{" "}
+                </Link>{" "}
                 online.
               </p>
             </div>

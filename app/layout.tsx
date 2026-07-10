@@ -151,6 +151,12 @@ export default function RootLayout({
       className={`${dmSans.variable} ${fraunces.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-[#1B4D3E] focus:px-4 focus:py-2 focus:font-mono focus:text-[11px] focus:font-semibold focus:uppercase focus:tracking-[0.18em] focus:text-[#f5f1e8]"
+        >
+          Naar hoofdinhoud
+        </a>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -158,7 +164,9 @@ export default function RootLayout({
           }}
         />
         <LandingHeader />
-        <main className="flex-1">{children}</main>
+        <main id="main-content" tabIndex={-1} className="flex-1 focus:outline-none">
+          {children}
+        </main>
         <LandingFooter />
       </body>
     </html>
