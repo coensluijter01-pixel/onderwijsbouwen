@@ -61,6 +61,8 @@ const colors = [
   { name: "Brunswick Green", hex: "#1B4D3E", textColor: "#f5f1e8" },
   { name: "Cream", hex: "#f5f1e8", textColor: "#1B4D3E" },
   { name: "Goud", hex: "#c9a961", textColor: "#1B4D3E" },
+  { name: "Actuales-blauw", hex: "#4a7c9e", textColor: "#f5f1e8" },
+  { name: "Nexus-oranje", hex: "#e8873a", textColor: "#1B4D3E" },
 ];
 
 const personJsonLd = {
