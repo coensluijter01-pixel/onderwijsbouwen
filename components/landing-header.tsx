@@ -26,7 +26,8 @@ export function LandingHeader() {
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
-  const wordmarkColor = onDark ? "text-[#f5f1e8]" : "text-[#f5f1e8]";
+  // Het wordmerk staat altijd op een donkergroene header, dus altijd cream.
+  const wordmarkColor = "text-[#f5f1e8]";
   const navTextDefault = onDark ? "text-[#f5f1e8]/60" : "text-[#f5f1e8]/65";
   const navTextHover = "hover:text-[#f5f1e8]";
   const navTextActive = "text-[#f5f1e8]";
