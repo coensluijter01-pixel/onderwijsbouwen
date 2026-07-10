@@ -23,6 +23,7 @@ export const metadata: Metadata = {
 };
 
 const LAATSTE_UPDATE = "20 mei 2026";
+const LAATSTE_UPDATE_ISO = "2026-05-20";
 
 export default function PrivacyPage() {
   return (
@@ -62,7 +63,8 @@ export default function PrivacyPage() {
       <section className="border-t border-[#1B4D3E] bg-[#f5f1e8]">
         <div className="mx-auto w-full max-w-3xl px-6 pt-16 sm:pt-20">
           <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#5a5a52]">
-            Laatste update: {LAATSTE_UPDATE}
+            Laatste update:{" "}
+            <time dateTime={LAATSTE_UPDATE_ISO}>{LAATSTE_UPDATE}</time>
           </p>
         </div>
 

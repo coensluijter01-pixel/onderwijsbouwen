@@ -172,16 +172,16 @@ export default function VeiligheidPage() {
             <table className="w-full min-w-[760px] border-collapse text-left text-[15px] text-[#0a1a14]">
               <thead>
                 <tr className="border-b border-[#1B4D3E] bg-[#1B4D3E]/[0.04]">
-                  <th className="px-6 py-5 font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E]">
+                  <th scope="col" className="px-6 py-5 font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E]">
                     Leverancier
                   </th>
-                  <th className="px-6 py-5 font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E]">
+                  <th scope="col" className="px-6 py-5 font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E]">
                     Functie
                   </th>
-                  <th className="px-6 py-5 font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E]">
+                  <th scope="col" className="px-6 py-5 font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E]">
                     Locatie
                   </th>
-                  <th className="px-6 py-5 font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E]">
+                  <th scope="col" className="px-6 py-5 font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E]">
                     Grondslag
                   </th>
                 </tr>
@@ -196,9 +196,12 @@ export default function VeiligheidPage() {
                         : ""
                     }
                   >
-                    <td className="px-6 py-5 font-semibold text-[#1B4D3E]">
+                    <th
+                      scope="row"
+                      className="px-6 py-5 text-left font-semibold text-[#1B4D3E]"
+                    >
                       {sp.vendor}
-                    </td>
+                    </th>
                     <td className="px-6 py-5">{sp.function}</td>
                     <td className="px-6 py-5">{sp.location}</td>
                     <td className="px-6 py-5">{sp.basis}</td>
