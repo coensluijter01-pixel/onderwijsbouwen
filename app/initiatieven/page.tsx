@@ -93,9 +93,9 @@ export default function InitiatievenPage() {
                   <p className="eyebrow break-words text-[#5a5a52]">
                     {product.audience}
                   </p>
-                  <h2 className="h-display-md mt-6 text-[#1B4D3E]">
+                  <h3 className="h-display-md mt-6 text-[#1B4D3E]">
                     {product.name}
-                  </h2>
+                  </h3>
                   <div className="mt-10 space-y-5 text-[17px] leading-[1.7] text-[#0a1a14]">
                     {product.longDescription.map((paragraph) => (
                       <p key={paragraph.slice(0, 40)}>{paragraph}</p>
