@@ -8,9 +8,59 @@ import {
   ProductColumnItem,
 } from "@/components/product-column-grid";
 import { SectionHero } from "@/components/section-hero";
-import { PRODUCTS } from "@/lib/constants";
+import { PRODUCTS, SITE_URL } from "@/lib/constants";
 
 const PRODUCT_COUNT = PRODUCTS.length;
+
+// Per initiatief het passende schema.org-type en de doelgroep. Corrigo en
+// Nexus zijn softwareapplicaties; Actuales is een contentabonnement (lesmateriaal).
+const PRODUCT_SCHEMA: Record<
+  string,
+  { type: "SoftwareApplication" | "Product"; category?: string; audience: string }
+> = {
+  Corrigo: {
+    type: "SoftwareApplication",
+    category: "EducationalApplication",
+    audience: "Docenten in het voortgezet onderwijs",
+  },
+  Actuales: {
+    type: "Product",
+    audience: "Docenten in het basisonderwijs en de onderbouw van het vo",
+  },
+  "Nexus Academy": {
+    type: "SoftwareApplication",
+    category: "EducationalApplication",
+    audience: "Leerlingen en studenten",
+  },
+};
+
+const initiativesJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": PRODUCTS.map((product) => {
+    const meta = PRODUCT_SCHEMA[product.name];
+    const base: Record<string, unknown> = {
+      "@type": meta.type,
+      "@id": `${product.href}/#initiatief`,
+      name: product.name,
+      url: product.href,
+      description: product.longDescription.join(" "),
+      inLanguage: "nl-NL",
+      audience: {
+        "@type": "EducationalAudience",
+        audienceType: meta.audience,
+      },
+      publisher: { "@id": `${SITE_URL}/#organization` },
+    };
+    if (meta.type === "SoftwareApplication") {
+      base.applicationCategory = meta.category;
+      base.operatingSystem = "Web";
+    } else {
+      base.brand = { "@id": `${SITE_URL}/#organization` };
+      base.category = "Onderwijs / lesmateriaal";
+    }
+    return base;
+  }),
+};
 
 export const metadata: Metadata = {
   title: "Initiatieven",
@@ -34,6 +84,10 @@ export default function InitiatievenPage() {
           { name: "Initiatieven", path: "/initiatieven" },
         ]}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(initiativesJsonLd) }}
+      />
       <SectionHero
         eyebrow="Wat we bouwen"
         digit="02"
@@ -44,7 +98,7 @@ export default function InitiatievenPage() {
             één visie.
           </>
         }
-        lead="Onder Onderwijsbouwen werken we aan drie zelfstandige initiatieven die elk een specifieke laag van het Nederlandse onderwijssysteem aanpakken. Alle drie werken op zichzelf en zijn voor hun gebruikers direct beschikbaar via hun eigen website. Samen vormen ze de eerste drie bouwstenen van een bredere benadering die in de komende jaren stap voor stap zichtbaar wordt."
+        lead="Onder Onderwijsbouwen werken we aan drie zelfstandige initiatieven die elk een specifieke laag van het Nederlandse onderwijssysteem aanpakken. Corrigo en Actuales zijn direct beschikbaar via hun eigen website; Nexus is in ontwikkeling. Samen vormen ze de eerste drie bouwstenen van een bredere benadering die in de komende jaren stap voor stap zichtbaar wordt."
       />
 
       <section className="border-t border-[#1B4D3E] bg-[#f5f1e8]">
