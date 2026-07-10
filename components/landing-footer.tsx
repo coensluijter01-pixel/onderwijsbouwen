@@ -11,6 +11,7 @@ import {
 } from "@/lib/constants";
 
 export function LandingFooter() {
+  const jaar = new Date().getFullYear();
   return (
     <footer className="border-t border-[#1B4D3E] bg-[#f5f1e8]">
       <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:py-24">
@@ -123,7 +124,7 @@ export function LandingFooter() {
 
         <div className="mt-16 flex flex-col gap-2 border-t border-[#d4cfc4] pt-6 text-xs text-[#5a5a52] sm:flex-row sm:items-center sm:justify-between">
           <p className="font-mono uppercase tracking-[0.18em]">
-            © 2026 Onderwijsbouwen
+            © {jaar} Onderwijsbouwen
           </p>
           <p className="font-mono uppercase tracking-[0.18em]">
             Gemaakt in Nederland

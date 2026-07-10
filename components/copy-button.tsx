@@ -38,6 +38,9 @@ export function CopyButton({ text, label = "Kopiëren" }: Props) {
           {label}
         </>
       )}
+      <span role="status" aria-live="polite" className="sr-only">
+        {copied ? "Gekopieerd naar klembord" : ""}
+      </span>
     </button>
   );
 }

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { ReactNode } from "react";
 
 type Props = {
@@ -7,6 +8,20 @@ type Props = {
 };
 
 export function Pullquote({ eyebrow, children, cite }: Props) {
+  const citeClassName =
+    "eyebrow group mt-12 inline-flex items-center gap-3 text-[#f5f1e8]/50 transition-colors hover:text-[#c9a961]";
+  const citeInner = cite ? (
+    <>
+      {cite.label}
+      <span
+        aria-hidden="true"
+        className="transition-transform group-hover:translate-x-0.5"
+      >
+        →
+      </span>
+    </>
+  ) : null;
+  const isInternal = cite ? cite.href.startsWith("/") : false;
   return (
     <section className="relative overflow-hidden bg-[#1B4D3E] text-[#f5f1e8]">
       <div aria-hidden="true" className="glow-on-deep absolute inset-0 pointer-events-none" />
@@ -16,18 +31,15 @@ export function Pullquote({ eyebrow, children, cite }: Props) {
           {children}
         </blockquote>
         {cite ? (
-          <a
-            href={cite.href}
-            className="eyebrow group mt-12 inline-flex items-center gap-3 text-[#f5f1e8]/50 transition-colors hover:text-[#c9a961]"
-          >
-            {cite.label}
-            <span
-              aria-hidden="true"
-              className="transition-transform group-hover:translate-x-0.5"
-            >
-              →
-            </span>
-          </a>
+          isInternal ? (
+            <Link href={cite.href} className={citeClassName}>
+              {citeInner}
+            </Link>
+          ) : (
+            <a href={cite.href} className={citeClassName}>
+              {citeInner}
+            </a>
+          )
         ) : null}
       </div>
     </section>
