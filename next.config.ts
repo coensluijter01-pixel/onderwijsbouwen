@@ -41,6 +41,10 @@ const securityHeaders = [
   // Clickjacking-bescherming voor oudere browsers (moderne dekking: frame-ancestors).
   { key: "X-Frame-Options", value: "DENY" },
   { key: "X-Content-Type-Options", value: "nosniff" },
+  // Isoleer de browsing context (XS-Leaks / opener-aanvallen). Bewust geen
+  // Cross-Origin-Resource-Policy: same-origin zou social crawlers blokkeren
+  // die de OG-images cross-origin ophalen.
+  { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
   { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
   // Schakel browser-features uit die de site niet gebruikt.
   {
