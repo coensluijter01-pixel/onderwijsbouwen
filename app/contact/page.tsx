@@ -6,6 +6,7 @@ import { SectionHero } from "@/components/section-hero";
 import {
   CONTACT_EMAIL,
   KVK_NUMBER,
+  SITE_URL,
   VESTIGING,
 } from "@/lib/constants";
 
@@ -43,9 +44,33 @@ const audiences = [
   },
 ];
 
+const contactJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "@id": `${SITE_URL}/contact#webpage`,
+  url: `${SITE_URL}/contact`,
+  name: "Contact en samenwerking | Onderwijsbouwen",
+  inLanguage: "nl-NL",
+  about: { "@id": `${SITE_URL}/#organization` },
+  mainEntity: {
+    "@id": `${SITE_URL}/#organization`,
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: CONTACT_EMAIL,
+      contactType: "customer support",
+      areaServed: "NL",
+      availableLanguage: "Dutch",
+    },
+  },
+};
+
 export default function ContactPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactJsonLd) }}
+      />
       <BreadcrumbJsonLd
         items={[
           { name: "Home", path: "/" },
