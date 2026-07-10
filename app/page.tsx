@@ -10,9 +10,20 @@ import {
   ProductColumnItem,
 } from "@/components/product-column-grid";
 import { SectionHero } from "@/components/section-hero";
-import { PRODUCTS, SITE_DESCRIPTION } from "@/lib/constants";
+import { PRODUCTS, SITE_DESCRIPTION, SITE_URL } from "@/lib/constants";
 
 const PRODUCT_COUNT = PRODUCTS.length;
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${SITE_URL}/#website`,
+  name: "Onderwijsbouwen",
+  url: SITE_URL,
+  inLanguage: "nl-NL",
+  description: SITE_DESCRIPTION,
+  publisher: { "@id": `${SITE_URL}/#organization` },
+};
 
 export const metadata: Metadata = {
   description: SITE_DESCRIPTION,
@@ -141,6 +152,10 @@ const audiences: { num: string; label: string; body: string; cta: AudienceCta }[
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
       <SectionHero
         eyebrow="01 / De stelling"
         size="tall"
@@ -249,7 +264,7 @@ export default function Home() {
                     {product.tagline}
                   </p>
 
-                  <div className="mt-10 border-l-2 border-[#c9a961] pl-5 transition-colors group-hover:border-[#c9a961]">
+                  <div className="mt-10 border-l-2 border-[#c9a961] pl-5">
                     <p className="product-stat text-[#1B4D3E] transition-colors group-hover:text-[#c9a961]">
                       {product.stat}
                     </p>
