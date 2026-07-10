@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
+import { JsonLd } from "@/components/json-ld";
 import { DarkCta } from "@/components/dark-cta";
 import { SectionHero } from "@/components/section-hero";
 import { SITE_URL } from "@/lib/constants";
@@ -78,10 +79,7 @@ const personJsonLd = {
 export default function OverPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
-      />
+      <JsonLd data={personJsonLd} />
       <BreadcrumbJsonLd
         items={[
           { name: "Home", path: "/" },
