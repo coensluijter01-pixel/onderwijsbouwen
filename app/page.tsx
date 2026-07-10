@@ -4,7 +4,11 @@ import { Button } from "@/components/button";
 import { DarkCta } from "@/components/dark-cta";
 import { NumberedStat } from "@/components/numbered-stat";
 import { Pullquote } from "@/components/pullquote";
-import { AudienceRow, AudienceRowList } from "@/components/audience-row";
+import {
+  AudienceRow,
+  AudienceRowList,
+  type AudienceRowProps,
+} from "@/components/audience-row";
 import {
   ProductColumnGrid,
   ProductColumnItem,
@@ -89,14 +93,7 @@ const forces = [
   },
 ];
 
-type AudienceCta = {
-  text: string;
-  href: string;
-  external: boolean;
-};
-
-const audiences: { num: string; label: string; body: string; cta: AudienceCta }[] =
-  [
+const audiences: AudienceRowProps[] = [
     {
       num: "01",
       label: "Scholen",

@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { DarkCta } from "@/components/dark-cta";
 import { Pullquote } from "@/components/pullquote";
-import { AudienceRow, AudienceRowList } from "@/components/audience-row";
+import {
+  AudienceRow,
+  AudienceRowList,
+  type AudienceRowProps,
+} from "@/components/audience-row";
 import { SectionHero } from "@/components/section-hero";
 
 export const metadata: Metadata = {
@@ -18,14 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-type AudienceCta = {
-  text: string;
-  href: string;
-  external: boolean;
-};
-
-const audiences: { num: string; label: string; body: string; cta: AudienceCta }[] =
-  [
+const audiences: AudienceRowProps[] = [
     {
       num: "01",
       label: "Scholen en schoolleiders",

@@ -1,13 +1,13 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-type AudienceCta = {
+export type AudienceCta = {
   text: string;
   href: string;
   external: boolean;
 };
 
-type AudienceRowProps = {
+export type AudienceRowProps = {
   num: string;
   label: string;
   body: string;
