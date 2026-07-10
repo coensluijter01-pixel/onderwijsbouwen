@@ -44,9 +44,9 @@ export const PRODUCTS: Product[] = [
     name: "Nexus Academy",
     audience: "Voor leerlingen en studenten",
     shortDescription:
-      "AI-leercoach voor leerlingen en studenten. Persoonlijke begeleiding, op elk moment, voor iedereen.",
+      "AI-leercoach in ontwikkeling voor leerlingen en studenten. Persoonlijke begeleiding, straks voor iedereen.",
     longDescription: [
-      "Nexus Academy is een AI-leercoach die op elk moment beschikbaar is voor de leerling die hem nodig heeft. Hij legt uit, vraagt door en denkt mee, op het niveau van de leerling zelf. Anders dan een traditionele bijles past Nexus zich aan aan het tempo, de stof en de leerstijl van de individuele gebruiker.",
+      "Nexus Academy is een AI-leercoach in ontwikkeling, bedoeld om op elk moment beschikbaar te zijn voor de leerling die hem nodig heeft. Hij legt uit, vraagt door en denkt mee, op het niveau van de leerling zelf. Anders dan een traditionele bijles past Nexus zich aan aan het tempo, de stof en de leerstijl van de individuele gebruiker.",
       "Het verschil met bestaande oplossingen zit niet in de technologie alleen, maar in de toegankelijkheid. Persoonlijke begeleiding hoort niet langer afhankelijk te zijn van wat een ouder kan betalen. Nexus is opgezet vanuit dat principe: dezelfde kwaliteit van begeleiding voor wie thuis ondersteuning kan kopen als voor wie dat niet kan.",
     ],
     href: "https://nexusacademy.nl",

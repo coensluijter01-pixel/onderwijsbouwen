@@ -66,12 +66,12 @@ const homeProducts = [
     name: "Nexus Academy",
     audience: "Initiatief 03 · leerlingen",
     tagline: "AI-leercoach voor leerlingen en studenten",
-    stat: "24/7 beschikbaar",
-    statLabel: "persoonlijke begeleiding, voor iedereen",
-    body: "Nexus Academy biedt leerlingen toegang tot een persoonlijke leercoach die uitlegt, doorvraagt en meedenkt op het niveau van de leerling zelf. Het verschil met bestaande oplossingen zit niet alleen in de technologie, maar in de toegankelijkheid. Persoonlijke begeleiding hoort niet langer af te hangen van wat een ouder kan betalen.",
+    stat: "In ontwikkeling",
+    statLabel: "persoonlijke begeleiding, straks voor iedereen",
+    body: "Nexus Academy wordt een persoonlijke leercoach die uitlegt, doorvraagt en meedenkt op het niveau van de leerling zelf. Het verschil met bestaande oplossingen zit niet alleen in de technologie, maar in de toegankelijkheid. Persoonlijke begeleiding hoort niet langer af te hangen van wat een ouder kan betalen.",
     href: PRODUCTS[2].href,
     domain: PRODUCTS[2].domain,
-    linkLabel: "Begin met Nexus",
+    linkLabel: "Ontdek Nexus",
   },
 ];
 
@@ -117,9 +117,9 @@ const audiences: AudienceRowProps[] = [
     {
       num: "03",
       label: "Ouders en leerlingen",
-      body: "Voor ouders en leerlingen is Nexus Academy de directe ingang voor persoonlijke begeleiding zonder de prijskaart die er normaal aan hangt. Daarnaast staan we open voor gesprekken met ouder-initiatieven en organisaties die werken aan toegang tot kwalitatief onderwijs.",
+      body: "Voor ouders en leerlingen werken we met Nexus Academy aan persoonlijke begeleiding zonder de prijskaart die er normaal aan hangt. Daarnaast staan we open voor gesprekken met ouder-initiatieven en organisaties die werken aan toegang tot kwalitatief onderwijs.",
       cta: {
-        text: "Begin met Nexus",
+        text: "Ontdek Nexus",
         href: "https://nexusacademy.nl",
         external: true,
       },
@@ -453,10 +453,10 @@ export default function Home() {
                 </p>
                 <p className="entry-title mt-10 text-[#1B4D3E]">Nexus</p>
                 <p className="mt-8 text-[17px] leading-[1.65] text-[#0a1a14]">
-                  Begin direct op nexusacademy.nl. Geen wachtlijsten, geen
-                  dure bijles-overeenkomsten, wel persoonlijke begeleiding die
-                  meegroeit met de leerling. Voor zowel scholieren als
-                  studenten.
+                  Nexus Academy is in ontwikkeling: persoonlijke begeleiding
+                  die meegroeit met de leerling, straks toegankelijk zonder
+                  dure bijles-overeenkomsten. Voor zowel scholieren als
+                  studenten. Volg de ontwikkeling op nexusacademy.nl.
                 </p>
                 <span className="mt-auto pt-12 inline-flex items-center gap-3 font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1B4D3E]">
                   Naar nexusacademy.nl

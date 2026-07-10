@@ -38,9 +38,9 @@ const audiences: AudienceRowProps[] = [
     {
       num: "03",
       label: "Ouders en leerlingen",
-      body: "Voor ouders en leerlingen is Nexus Academy de directe ingang voor persoonlijke begeleiding zonder de prijskaart die er normaal aan hangt. Daarnaast staan we open voor gesprekken met ouder-initiatieven en organisaties die werken aan toegang tot kwalitatief onderwijs voor leerlingen die in het reguliere stelsel onvoldoende ondersteuning krijgen.",
+      body: "Voor ouders en leerlingen werken we met Nexus Academy aan persoonlijke begeleiding zonder de prijskaart die er normaal aan hangt. Daarnaast staan we open voor gesprekken met ouder-initiatieven en organisaties die werken aan toegang tot kwalitatief onderwijs voor leerlingen die in het reguliere stelsel onvoldoende ondersteuning krijgen.",
       cta: {
-        text: "Begin met Nexus",
+        text: "Ontdek Nexus",
         href: "https://nexusacademy.nl",
         external: true,
       },

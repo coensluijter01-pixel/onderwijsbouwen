@@ -1,8 +1,7 @@
-// TODO @gebruiker: laat deze privacyverklaring vóór go-live nakijken door een juridisch geschoolde
-// persoon. De inhoud is geschreven op basis van de huidige verwerkingen (geen analytics,
-// geen tracking cookies, alleen serverlogs via hosting en mailverkeer via contact@onderwijsbouwen.nl)
-// en moet worden geverifieerd tegen de werkelijke situatie bij elke significante wijziging
-// in de site, hosting, formulieren of tooling.
+// Onderhoud: deze privacyverklaring beschrijft de huidige verwerkingen (geen analytics,
+// geen tracking cookies, alleen serverlogs via hosting en mailverkeer via contact@onderwijsbouwen.nl).
+// Verifieer de tekst juridisch bij elke significante wijziging in de site, hosting,
+// formulieren of tooling.
 
 import type { Metadata } from "next";
 import Link from "next/link";
