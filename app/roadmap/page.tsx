@@ -10,6 +10,7 @@ import {
   type RoadmapProduct,
   type RoadmapStatus,
 } from "@/lib/roadmap-data";
+import { formatDatum } from "@/lib/format-date";
 
 export const metadata: Metadata = {
   title: "Roadmap",
@@ -83,7 +84,10 @@ export default function RoadmapPage() {
       <section className="border-t border-[#1B4D3E] bg-[#f5f1e8]">
         <div className="mx-auto w-full max-w-6xl px-6 pt-16 sm:pt-20">
           <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#5a5a52]">
-            Laatste update: {roadmapBijgewerkt}
+            Laatste update:{" "}
+            <time dateTime={roadmapBijgewerkt}>
+              {formatDatum(roadmapBijgewerkt)}
+            </time>
           </p>
         </div>
 

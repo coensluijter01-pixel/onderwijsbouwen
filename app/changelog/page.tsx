@@ -7,6 +7,7 @@ import {
   changelogBijgewerkt,
   type ChangelogType,
 } from "@/lib/changelog-data";
+import { formatDatum } from "@/lib/format-date";
 
 export const metadata: Metadata = {
   title: "Changelog",
@@ -34,28 +35,6 @@ const typeStyles: Record<ChangelogType, string> = {
   actuales: "bg-[#4a7c9e]/20 text-[#1B4D3E]",
   nexus: "bg-[#e8873a]/20 text-[#1B4D3E]",
 };
-
-const maanden = [
-  "januari",
-  "februari",
-  "maart",
-  "april",
-  "mei",
-  "juni",
-  "juli",
-  "augustus",
-  "september",
-  "oktober",
-  "november",
-  "december",
-];
-
-function formatDatum(iso: string): string {
-  const [y, m, d] = iso.split("-");
-  const dag = parseInt(d, 10);
-  const maand = maanden[parseInt(m, 10) - 1];
-  return `${dag} ${maand} ${y}`;
-}
 
 export default function ChangelogPage() {
   const items = [...changelog].sort((a, b) =>
@@ -86,7 +65,10 @@ export default function ChangelogPage() {
       <section className="border-t border-[#1B4D3E] bg-[#f5f1e8]">
         <div className="mx-auto w-full max-w-6xl px-6 pt-16 sm:pt-20">
           <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#5a5a52]">
-            Laatste update: {changelogBijgewerkt}
+            Laatste update:{" "}
+            <time dateTime={changelogBijgewerkt}>
+              {formatDatum(changelogBijgewerkt)}
+            </time>
           </p>
         </div>
 
@@ -128,9 +110,12 @@ export default function ChangelogPage() {
                 />
                 <div className="grid grid-cols-1 gap-3 lg:grid-cols-12 lg:gap-10">
                   <div className="lg:col-span-3">
-                    <p className="font-display text-[clamp(1.125rem,2vw,1.375rem)] font-medium leading-tight tracking-tight text-[#1B4D3E]">
+                    <time
+                      dateTime={item.datum}
+                      className="font-display block text-[clamp(1.125rem,2vw,1.375rem)] font-medium leading-tight tracking-tight text-[#1B4D3E]"
+                    >
                       {formatDatum(item.datum)}
-                    </p>
+                    </time>
                     <span
                       className={`mt-3 inline-flex items-center px-2.5 py-1 font-mono text-[10px] font-semibold uppercase tracking-[0.18em] ${typeStyles[item.type]}`}
                     >
@@ -171,9 +156,9 @@ export default function ChangelogPage() {
       <section className="border-t border-[#1B4D3E] bg-[#f5f1e8]">
         <div className="mx-auto w-full max-w-4xl px-6 py-20 text-center sm:py-24">
           <p className="eyebrow text-[#5a5a52]">09 / Op de hoogte blijven</p>
-          <h3 className="font-display mt-6 text-[clamp(1.75rem,3.5vw,2.5rem)] font-medium leading-tight tracking-tight text-[#1B4D3E]">
+          <h2 className="font-display mt-6 text-[clamp(1.75rem,3.5vw,2.5rem)] font-medium leading-tight tracking-tight text-[#1B4D3E]">
             Wij sturen geen nieuwsbrief.
-          </h3>
+          </h2>
           <p className="mt-6 text-[17px] leading-[1.7] text-[#0a1a14]">
             Onze updates verschijnen hier en op onze publieke kanalen.
           </p>
