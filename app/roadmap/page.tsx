@@ -33,7 +33,7 @@ const statusLabel: Record<RoadmapStatus, string> = {
 const statusStyles: Record<RoadmapStatus, string> = {
   afgerond: "bg-[#1B4D3E]/10 text-[#1B4D3E]",
   "in-uitvoering": "bg-[#c9a961]/20 text-[#1B4D3E]",
-  gepland: "bg-black/5 text-black/60",
+  gepland: "bg-[#5a5a52]/10 text-[#5a5a52]",
 };
 
 const productLabel: Record<RoadmapProduct, string> = {

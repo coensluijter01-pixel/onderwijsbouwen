@@ -32,7 +32,7 @@ const typeStyles: Record<ChangelogType, string> = {
   organisatie: "bg-[#1B4D3E]/10 text-[#1B4D3E]",
   corrigo: "bg-[#c9a961]/20 text-[#1B4D3E]",
   actuales: "bg-[#4a7c9e]/20 text-[#1B4D3E]",
-  nexus: "bg-black/5 text-black/70",
+  nexus: "bg-[#e8873a]/20 text-[#1B4D3E]",
 };
 
 const maanden = [
