@@ -16,7 +16,9 @@ import {
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  // Alleen de gewichten die de site echt gebruikt (400 body, 500 medium,
+  // 600 semibold). 700/bold komt nergens voor — scheelt een fontbestand.
+  weight: ["400", "500", "600"],
   display: "swap",
 });
 
