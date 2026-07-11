@@ -1,0 +1,7 @@
+# Coordinated vulnerability disclosure voor Onderwijsbouwen (RFC 9116).
+# Meld beveiligingsproblemen verantwoord via onderstaand contact.
+Contact: mailto:contact@onderwijsbouwen.nl
+Expires: 2027-07-11T00:00:00.000Z
+Preferred-Languages: nl, en
+Canonical: https://onderwijsbouwen.nl/.well-known/security.txt
+Policy: https://onderwijsbouwen.nl/veiligheid

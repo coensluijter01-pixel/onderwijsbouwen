@@ -1,3 +1,4 @@
+import { JsonLd } from "@/components/json-ld";
 import { SITE_URL } from "@/lib/constants";
 
 type Crumb = {
@@ -17,10 +18,5 @@ export function BreadcrumbJsonLd({ items }: { items: Crumb[] }) {
     })),
   };
 
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-    />
-  );
+  return <JsonLd data={jsonLd} />;
 }

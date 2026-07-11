@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { DM_Sans, Fraunces, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { JsonLd } from "@/components/json-ld";
 import { LandingHeader } from "@/components/landing-header";
 import { LandingFooter } from "@/components/landing-footer";
 import {
@@ -157,12 +158,7 @@ export default function RootLayout({
         >
           Naar hoofdinhoud
         </a>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(organizationJsonLd),
-          }}
-        />
+        <JsonLd data={organizationJsonLd} />
         <LandingHeader />
         <main id="main-content" tabIndex={-1} className="flex-1 focus:outline-none">
           {children}

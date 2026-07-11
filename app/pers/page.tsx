@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
+import { JsonLd } from "@/components/json-ld";
 import { CopyButton } from "@/components/copy-button";
 import { DarkCta } from "@/components/dark-cta";
 import { SectionHero } from "@/components/section-hero";
@@ -89,10 +90,7 @@ const personJsonLd = {
 export default function PersPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
-      />
+      <JsonLd data={personJsonLd} />
       <BreadcrumbJsonLd
         items={[
           { name: "Home", path: "/" },
