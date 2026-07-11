@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { DarkCta } from "@/components/dark-cta";
+import { JsonLd } from "@/components/json-ld";
 import { Pullquote } from "@/components/pullquote";
 import {
   ProductColumnGrid,
@@ -84,10 +85,7 @@ export default function InitiatievenPage() {
           { name: "Initiatieven", path: "/initiatieven" },
         ]}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(initiativesJsonLd) }}
-      />
+      <JsonLd data={initiativesJsonLd} />
       <SectionHero
         eyebrow="Wat we bouwen"
         digit="02"

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
+import { JsonLd } from "@/components/json-ld";
 import { Pullquote } from "@/components/pullquote";
 import { SectionHero } from "@/components/section-hero";
 import {
@@ -68,10 +69,7 @@ const contactJsonLd = {
 export default function ContactPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactJsonLd) }}
-      />
+      <JsonLd data={contactJsonLd} />
       <BreadcrumbJsonLd
         items={[
           { name: "Home", path: "/" },

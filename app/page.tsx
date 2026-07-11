@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/button";
 import { DarkCta } from "@/components/dark-cta";
+import { JsonLd } from "@/components/json-ld";
 import { NumberedStat } from "@/components/numbered-stat";
 import { Pullquote } from "@/components/pullquote";
 import {
@@ -149,10 +150,7 @@ const audiences: AudienceRowProps[] = [
 export default function Home() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
-      />
+      <JsonLd data={websiteJsonLd} />
       <SectionHero
         eyebrow="01 / De stelling"
         size="tall"
