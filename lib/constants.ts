@@ -9,17 +9,17 @@ export type Product = {
 };
 
 export const SITE_DESCRIPTION =
-  "Onderwijsbouwen ontwikkelt technologie en kennis voor het Nederlandse onderwijs. We bouwen aan drie initiatieven: Corrigo voor docenten in het vo, Actuales voor actueel onderwijs, en Nexus Academy voor leerlingen.";
+  "Onderwijsbouwen ontwikkelt onderwijssoftware en innovatieve initiatieven voor het Nederlandse onderwijs. Wij bouwen aan Corrigo (AI-nakijktool & toetsbouwer vo), Actuales (wekelijkse lespakketten actueel nieuws po & vo) en Nexus Academy (Socratische AI-leercoach voor leerlingen).";
 
 export const PRODUCTS: Product[] = [
   {
     name: "Corrigo",
     audience: "Voor docenten in het voortgezet onderwijs",
     shortDescription:
-      "AI-nakijktool voor docenten in het voortgezet onderwijs. Geeft tijd terug aan de mensen die hem het hardst nodig hebben.",
+      "AI-nakijktool en toetsbouwer voor docenten in het voortgezet onderwijs. Scan je stapel. Corrigo kijkt na.",
     longDescription: [
-      "Corrigo is een AI-nakijktool die het corrigeren van open vragen, essays en toetsen automatiseert. Het werkt naast de docent, niet in plaats van hem. De tool produceert consistente feedback per leerling, levert inzicht in waar leerlingen vastlopen en geeft daarmee een beeld van waar de klas als geheel staat.",
-      "Het belangrijkste effect: docenten krijgen gemiddeld zes uur per week terug. Corrigo wordt op dit moment gebruikt door middelbare scholen door heel Nederland en is direct beschikbaar voor scholen die een pilot willen draaien of een implementatietraject willen starten.",
+      "Corrigo automatiseert het corrigeren van open vragen, essays en toetsen en biedt een geïntegreerde toetsbouwer met RTTI-analyse en SLO-doelkoppeling. De tool werkt naast de docent, die 100% de regie en de eindbeoordeling behoudt.",
+      "Docenten krijgen gemiddeld 9 uur per week terug op nakijk- en administratiewerk. Corrigo is actief op 25+ VO-scholen met 100+ docenten, is aangesloten bij Kennisnet Entree Federatie, SIVON (Modelverwerkersovereenkomst 4.0), Edu-V en voldoet aan het Privacyconvenant Onderwijs 4.0 met 100% EU-AI-verwerking (Frankfurt). Live op corrigo.nl en corrigo.be.",
     ],
     href: "https://corrigo.nl",
     domain: "corrigo.nl",
@@ -30,10 +30,10 @@ export const PRODUCTS: Product[] = [
     name: "Actuales",
     audience: "Voor docenten in basisonderwijs en onderbouw vo",
     shortDescription:
-      "Wekelijkse lespakketten over actueel nieuws. Presentatie, lesscript, werkbladen op drie niveaus, quiz en nieuwsfragment, klaar voor digibord en print.",
+      "Maandagochtend in 5 minuten een complete les over het nieuws. Wekelijkse lespakketten voor groep 5 t/m 8 po en onderbouw vo.",
     longDescription: [
-      "Actuales maakt van elke grote nieuwsgebeurtenis een kant-en-klaar lespakket: presentatie, lesscript, werkbladen op drie niveaus met NT2-taalsteun, quiz en een nieuwsfragment met kijkvragen. Elke week een nieuwe editie, en bij groot nieuws een extra editie.",
-      "Actuales is ontwikkeld voor groep 5 tot en met 8 en de onderbouw van het voortgezet onderwijs. Aardrijkskunde, rekenen, economie, geschiedenis, burgerschap en mentorles: dezelfde nieuwsgebeurtenis, uitgewerkt voor elk vak en elk niveau in de klas.",
+      "Actuales maakt van elke grote nieuwsgebeurtenis een kant-en-klaar lespakket: presentatie (PowerPoint & digibord-Klaslokaal), lesscript (50 min), werkbladen op drie niveaus met NT2-taalsteun, RTTI-quiz en een nieuwsfragment met kijkvragen. Bij groot nieuws verschijnt binnen 24 uur een extra editie.",
+      "Ontwikkeld voor groep 5 t/m 8 en de onderbouw van het vo (vmbo, havo, vwo). Behandelt 8 vakgebieden waaronder aardrijkskunde, rekenen, geschiedenis, economie en burgerschap (conform WVO 2020). Volledig AVG-proof met 0 leerlingaccounts en 0 advertenties. Bekijk meer op actuales.nl.",
     ],
     href: "https://actuales.nl",
     domain: "actuales.nl",
@@ -44,10 +44,10 @@ export const PRODUCTS: Product[] = [
     name: "Nexus Academy",
     audience: "Voor leerlingen en studenten",
     shortDescription:
-      "AI-leercoach in ontwikkeling voor leerlingen en studenten. Persoonlijke begeleiding, straks voor iedereen.",
+      "Socratische AI-studiecoach voor leerlingen en studenten. Zet lesstof en toetsresultaten om in persoonlijk inzicht en groei.",
     longDescription: [
-      "Nexus Academy is een AI-leercoach in ontwikkeling, bedoeld om op elk moment beschikbaar te zijn voor de leerling die hem nodig heeft. Hij legt uit, vraagt door en denkt mee, op het niveau van de leerling zelf. Anders dan een traditionele bijles past Nexus zich aan aan het tempo, de stof en de leerstijl van de individuele gebruiker.",
-      "Het verschil met bestaande oplossingen zit niet in de technologie alleen, maar in de toegankelijkheid. Persoonlijke begeleiding hoort niet langer afhankelijk te zijn van wat een ouder kan betalen. Nexus is opgezet vanuit dat principe: dezelfde kwaliteit van begeleiding voor wie thuis ondersteuning kan kopen als voor wie dat niet kan.",
+      "Nexus Academy is een persoonlijke studieomgeving en AI-leercoach voor leerlingen in het voortgezet onderwijs (vmbo, havo, vwo) en studenten. De coach legt uit, vraagt door en begeleidt socratisch op het niveau van de leerling zelf, met ondersteuning voor eigen lesmateriaal, 544 SLO-curriculumdoelen en ruim 400 examens.",
+      "Dankzij de gesloten leerlus met Corrigo worden toetscijfers direct omgezet in gepersonaliseerde oefenpaden. Met ingebouwde kindveiligheid en crisisdetectie (X-Safety-Signal) biedt Nexus hoogwaardige begeleiding voor elke leerling. Live in besloten pilotfase op nexusacademy.nl.",
     ],
     href: "https://nexusacademy.nl",
     domain: "nexusacademy.nl",

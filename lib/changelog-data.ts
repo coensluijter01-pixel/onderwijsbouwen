@@ -14,6 +14,23 @@ export type ChangelogItem = {
 
 export const changelog: ChangelogItem[] = [
   {
+    id: "2026-08-actualiseren-holding",
+    datum: "2026-08-11",
+    type: "organisatie",
+    titel: "Geactualiseerde productinformatie live",
+    beschrijving:
+      "Onderwijsbouwen.nl geactualiseerd met actuele gegevens over Corrigo (NL & BE), Actuales (8 vakgebieden) en Nexus Academy (besloten pilotfase op nexusacademy.nl).",
+  },
+  {
+    id: "2026-08-corrigo-be-bedrock",
+    datum: "2026-08-10",
+    type: "corrigo",
+    titel: "Corrigo Vlaanderen & 100% EU AI-hosting",
+    beschrijving:
+      "Corrigo gelokaliseerd gelanceerd voor Vlaanderen via corrigo.be en overstap naar AWS Bedrock EU (Frankfurt) voor 100% verwerking en opslag binnen de EU.",
+    link: "https://corrigo.be",
+  },
+  {
     id: "2026-06-drie-initiatieven",
     datum: "2026-06-12",
     type: "organisatie",
@@ -66,4 +83,4 @@ export const changelog: ChangelogItem[] = [
   },
 ];
 
-export const changelogBijgewerkt = "2026-06-12";
+export const changelogBijgewerkt = "2026-08-11";

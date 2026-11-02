@@ -35,12 +35,21 @@ export const roadmap: RoadmapItem[] = [
   },
   // Q3 2026
   {
+    id: "q3-2026-corrigo-be-launch",
+    kwartaal: "Q3 2026",
+    product: "corrigo",
+    titel: "Corrigo Vlaanderen (corrigo.be) & EU-Bedrock",
+    beschrijving:
+      "Uitrol van corrigo.be voor Vlaanderen, overstap naar AWS Bedrock EU (Frankfurt) voor 100% EU-AI-verwerking, en aansluiting bij Privacyconvenant Onderwijs 4.0 en SIVON.",
+    status: "afgerond",
+  },
+  {
     id: "q3-2026-actuales-edities",
     kwartaal: "Q3 2026",
     product: "actuales",
-    titel: "Doorlopende wekelijkse edities",
+    titel: "Doorlopende wekelijkse edities & Lesweergave",
     beschrijving:
-      "Wekelijkse lespakketten en extra edities bij groot nieuws, met doorontwikkeling op basis van feedback van docenten in po en onderbouw vo.",
+      "Wekelijkse lespakketten en extra edities bij groot nieuws (<24u live), met digibord-Klaslokaal en NT2-steunbladen over 8 vakgebieden.",
     status: "in-uitvoering",
   },
   {
@@ -49,16 +58,16 @@ export const roadmap: RoadmapItem[] = [
     product: "corrigo",
     titel: "Uitrol en doorontwikkeling op middelbare scholen",
     beschrijving:
-      "Verdere implementatie van Corrigo op middelbare scholen in Nederland, met verbeteringen aan nakijkkwaliteit, toetsbouw en schoolrapportage op basis van pilot-feedback.",
+      "Verdere implementatie van Corrigo op 25+ VO-scholen (100+ docenten), met 9 uur/week tijdsbesparing, RTTI-toetsbouwer en cijferexport naar Magister/Somtoday.",
     status: "in-uitvoering",
   },
   {
     id: "q3-2026-nexus-beta",
     kwartaal: "Q3 2026",
     product: "nexus",
-    titel: "Closed beta met pilot-scholen",
+    titel: "Nexus Academy pilotfase (nexusacademy.nl)",
     beschrijving:
-      "Eerste werkende versie van het Nexus-leerplatform live bij een beperkte groep pilot-scholen in de Haaglanden.",
+      "Socratische AI-studiecoach live op nexusacademy.nl met 544 SLO-doelen, 400+ examens, crisisdetectie (X-Safety-Signal) en gesloten leerlus met Corrigo-toetsscores.",
     status: "in-uitvoering",
   },
   // Q4 2026
@@ -66,9 +75,9 @@ export const roadmap: RoadmapItem[] = [
     id: "q4-2026-actuales-scholen",
     kwartaal: "Q4 2026",
     product: "actuales",
-    titel: "Schoolbrede pilots en vakuitbreiding",
+    titel: "Schoolbrede licenties (2026–2027)",
     beschrijving:
-      "Pilots met scholen die Actuales structureel in het rooster willen inzetten, en uitbreiding van het aanbod naar aanvullende vakken en niveaus binnen po en onderbouw vo.",
+      "Introductie van Docent- (€49/jaar) en Schoollicenties (€595/jaar) voor schooljaar 2026–2027, en uitbreiding van het lesaanbod naar aanvullende vakken.",
     status: "gepland",
   },
   {
@@ -77,16 +86,16 @@ export const roadmap: RoadmapItem[] = [
     product: "corrigo",
     titel: "Schoolbrede implementaties",
     beschrijving:
-      "Implementatietrajecten voor scholen die Corrigo op vakgroep- of schoolniveau willen inzetten, inclusief begeleiding bij invoering.",
+      "Implementatietrajecten voor scholen die Corrigo op vakgroep- of schoolniveau inzetten, inclusief begeleiding en LVS-koppelingen.",
     status: "gepland",
   },
   {
     id: "q4-2026-nexus-publiek",
     kwartaal: "Q4 2026",
     product: "nexus",
-    titel: "Nexus publieke lancering",
+    titel: "Nexus publieke uitrol & winkelschil",
     beschrijving:
-      "Bredere beschikbaarheid van Nexus voor het voortgezet onderwijs in Nederland.",
+      "Bredere beschikbaarheid van Nexus voor het voortgezet onderwijs en uitrol van de mobiele/desktop schil.",
     status: "gepland",
   },
   {
@@ -100,4 +109,4 @@ export const roadmap: RoadmapItem[] = [
   },
 ];
 
-export const roadmapBijgewerkt = "2026-06-12";
+export const roadmapBijgewerkt = "2026-08-11";

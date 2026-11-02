@@ -239,11 +239,8 @@ export default function VeiligheidPage() {
                   Onze hoofdopslag staat in de EU. Persoonsgegevens van
                   scholen, docenten en leerlingen worden primair opgeslagen in
                   EU-rekencentra, met versleuteling in opslag en tijdens
-                  transport. Verwerking buiten de EU vindt alleen plaats voor
-                  AI-modelaanroepen waarvoor op dit moment geen volwaardig
-                  Europees alternatief beschikbaar is, en altijd onder
-                  standaard contractuele bepalingen die training op klantdata
-                  uitsluiten.
+                  transport. De AI-modelverwerking voor nakijken en coaching vindt gegarandeerd plaats binnen
+                  EU-datacenters (zoals AWS Bedrock EU in Frankfurt). Er vindt onder geen enkele voorwaarde training plaats op klant- of leerlingdata.
                 </p>
                 <p>
                   Bewaartermijnen verschillen per type data: account- en

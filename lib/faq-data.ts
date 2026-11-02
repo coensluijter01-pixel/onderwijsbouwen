@@ -87,42 +87,42 @@ export const faq: FaqItem[] = [
     categorie: "producten",
     vraag: "Wat is Corrigo?",
     antwoord:
-      '<a href="https://corrigo.nl" target="_blank" rel="noopener noreferrer">Corrigo</a> is een AI-nakijk- en toetsbouwtool voor docenten in het voortgezet onderwijs. De tool automatiseert het corrigeren van open vragen, essays en toetsen, levert consistente feedback per leerling en geeft inzicht in waar de klas vastloopt. Docenten houden de regie; Corrigo werkt naast hen, niet in plaats van hen.',
+      '<a href="https://corrigo.nl" target="_blank" rel="noopener noreferrer">Corrigo</a> is een AI-nakijktool en toetsbouwer voor docenten in het voortgezet onderwijs. De tool automatiseert het corrigeren van open vragen, essays en toetsen met consistente feedback, biedt een toetsbouwer met RTTI-analyse en levert inzicht in waar de klas vastloopt (gemiddeld 9 uur/week tijdsbesparing). Docenten behouden 100% de regie.',
   },
   {
     id: "is-corrigo-beschikbaar",
     categorie: "producten",
     vraag: "Is Corrigo al beschikbaar?",
     antwoord:
-      'Ja. <a href="https://corrigo.nl" target="_blank" rel="noopener noreferrer">Corrigo</a> is live voor docenten in het voortgezet onderwijs en wordt gebruikt op middelbare scholen in Nederland. Scholen die een pilot of implementatie willen bespreken, kunnen starten via corrigo.nl of mailen naar <a href="mailto:contact@onderwijsbouwen.nl">contact@onderwijsbouwen.nl</a>.',
+      'Ja. <a href="https://corrigo.nl" target="_blank" rel="noopener noreferrer">Corrigo</a> is live op corrigo.nl (Nederland) en corrigo.be (Vlaanderen), en wordt gebruikt op 25+ VO-scholen met 100+ docenten. Scholen die een pilot of implementatie willen bespreken, kunnen starten via corrigo.nl of mailen naar <a href="mailto:contact@onderwijsbouwen.nl">contact@onderwijsbouwen.nl</a>.',
   },
   {
     id: "wat-is-actuales",
     categorie: "producten",
     vraag: "Wat is Actuales?",
     antwoord:
-      '<a href="https://actuales.nl" target="_blank" rel="noopener noreferrer">Actuales</a> maakt van elke grote nieuwsgebeurtenis een compleet lespakket: presentatie, lesscript, werkbladen op drie niveaus met NT2-taalsteun, quiz en een nieuwsfragment met kijkvragen. Elke week een nieuwe editie, en bij groot nieuws een extra editie. Actuales is ontwikkeld voor groep 5 tot en met 8 en de onderbouw van het vo, voor vakken als aardrijkskunde, burgerschap, geschiedenis en mentorles.',
+      '<a href="https://actuales.nl" target="_blank" rel="noopener noreferrer">Actuales</a> maakt van elke grote nieuwsgebeurtenis een compleet lespakket: presentatie (PowerPoint & digibord-Klaslokaal), lesscript (50 min), werkbladen op drie niveaus met NT2-taalsteun, RTTI-quiz en nieuwsfragment met kijkvragen. Elke week een nieuwe editie, en bij groot nieuws binnen 24 uur een extra editie. Ontwikkeld voor po (groep 5 t/m 8) en vo-onderbouw over 8 vakgebieden (o.a. burgerschap conform WVO 2020).',
   },
   {
     id: "is-actuales-beschikbaar",
     categorie: "producten",
     vraag: "Is Actuales al beschikbaar?",
     antwoord:
-      'Ja. <a href="https://actuales.nl" target="_blank" rel="noopener noreferrer">Actuales</a> is live en elke week beschikbaar voor docenten in po en onderbouw vo. Scholen die Actuales schoolbreed willen inzetten of een pilot willen bespreken, kunnen mailen naar <a href="mailto:contact@onderwijsbouwen.nl">contact@onderwijsbouwen.nl</a>.',
+      'Ja. <a href="https://actuales.nl" target="_blank" rel="noopener noreferrer">Actuales</a> is live en elke week beschikbaar voor docenten in po en onderbouw vo met 0 leerlingaccounts (100% AVG-proof). Scholen die Actuales schoolbreed willen inzetten of een pilot willen bespreken, kunnen mailen naar <a href="mailto:contact@onderwijsbouwen.nl">contact@onderwijsbouwen.nl</a>.',
   },
   {
     id: "wat-is-nexus",
     categorie: "producten",
     vraag: "Wat is Nexus?",
     antwoord:
-      '<a href="https://nexusacademy.nl" target="_blank" rel="noopener noreferrer">Nexus Academy</a> is een leerplatform in ontwikkeling voor leerlingen in het voortgezet onderwijs. Het biedt persoonlijke begeleiding via een AI-leercoach die uitlegt, doorvraagt en meedenkt op het niveau van de leerling. Het platform is opgezet vanuit het principe dat kwalitatieve begeleiding niet afhankelijk hoort te zijn van wat ouders kunnen betalen.',
+      '<a href="https://nexusacademy.nl" target="_blank" rel="noopener noreferrer">Nexus Academy</a> is een Socratische AI-studiecoach en studieomgeving voor leerlingen in het voortgezet onderwijs en studenten. Het biedt persoonlijke begeleiding op basis van 544 SLO-curriculumdoelen en 400+ examens. Dankzij de gesloten leerlus met Corrigo worden toetsscores automatisch omgezet in gerichte oefenpaden.',
   },
   {
     id: "is-nexus-live",
     categorie: "producten",
     vraag: "Is Nexus al beschikbaar?",
     antwoord:
-      'Nexus is in ontwikkeling en wordt in fases uitgerold. De actuele status staat op de <a href="/roadmap">roadmap</a>.',
+      'Nexus Academy is live in besloten pilotfase op <a href="https://nexusacademy.nl" target="_blank" rel="noopener noreferrer">nexusacademy.nl</a>. De actuele voortgang en uitrolfases vindt u op de <a href="/roadmap">roadmap</a>.',
   },
   // Privacy en veiligheid
   {
@@ -130,14 +130,14 @@ export const faq: FaqItem[] = [
     categorie: "privacy-en-veiligheid",
     vraag: "Hoe gaan jullie om met privacy?",
     antwoord:
-      'Wij zijn aangesloten bij het Privacyconvenant Onderwijs, Kennisnet Entree Federatie, SIVON en Edu-V. Op de pagina <a href="/veiligheid">Veiligheid</a> staat een actueel overzicht van onze sub-verwerkers en hoe we omgaan met datalocatie en bewaartermijnen.',
+      'Wij zijn aangesloten bij het Privacyconvenant Onderwijs 4.0, Kennisnet Entree Federatie, SIVON (Modelverwerkersovereenkomst 4.0) en Edu-V. Op de pagina <a href="/veiligheid">Veiligheid</a> staat een actueel overzicht van onze sub-verwerkers en datastroom-waarborgen.',
   },
   {
     id: "buitenlandse-leveranciers",
     categorie: "privacy-en-veiligheid",
     vraag: "Werken jullie met buitenlandse leveranciers?",
     antwoord:
-      'Onze hoofdopslag van onderwijsdata staat in de EU. Voor AI-verwerking schakelen wij ook leveranciers buiten de EU in, met standaard contractuele bepalingen en zonder dat klantdata wordt gebruikt voor het trainen van modellen. Het volledige overzicht staat op <a href="/veiligheid">Veiligheid</a>.',
+      'Onze hoofdopslag van onderwijsdata én de AI-verwerking (zoals AWS Bedrock EU in Frankfurt) vinden 100% plaats binnen de EU. Geen enkele klant- of leerlingdata wordt gebruikt voor het trainen van modellen. Het volledige verwerkingsoverzicht staat op <a href="/veiligheid">Veiligheid</a>.',
   },
   {
     id: "verwerkersovereenkomst",

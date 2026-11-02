@@ -21,23 +21,23 @@ export const metadata: Metadata = {
 };
 
 const boilerplateShort =
-  "Onderwijsbouwen is een Nederlandse onderwijssoftware-studio, gevestigd in Rotterdam. Onderwijsbouwen ontwikkelt tools en initiatieven voor het Nederlandse onderwijs, waaronder Corrigo (AI-nakijktool voor docenten), Actuales (wekelijkse lespakketten over actueel nieuws) en Nexus (leerplatform voor leerlingen). Opgericht in 2024 door Coen Sluijter, docent aardrijkskunde.";
+  "Onderwijsbouwen is een Nederlandse onderwijssoftware-studio, gevestigd in Rotterdam. Onderwijsbouwen ontwikkelt slimme tools voor het Nederlandse onderwijs: Corrigo (AI-nakijktool & toetsbouwer voor docenten), Actuales (wekelijkse lespakketten over actueel nieuws) en Nexus Academy (Socratische AI-studiecoach voor leerlingen). Opgericht in 2024 door Coen Sluijter, docent aardrijkskunde.";
 
 const boilerplateLong =
-  "Onderwijsbouwen is een Nederlandse onderwijssoftware-studio die werkt aan slimme tools voor het Nederlandse onderwijs. Het bedrijf is in 2024 opgericht door Coen Sluijter, docent aardrijkskunde in de Haaglanden, en is gevestigd in Rotterdam (KvK 93598874). Onderwijsbouwen ontwikkelt drie initiatieven: Corrigo, een AI-nakijk- en toetsbouwtool voor docenten in het voortgezet onderwijs; Actuales, wekelijkse lespakketten over actueel nieuws voor po en onderbouw vo; en Nexus, een leerplatform in ontwikkeling voor leerlingen. Alle initiatieven delen hetzelfde uitgangspunt: de docent en de school in de regie houden, en bouwen vanuit de praktijk van het Nederlandse onderwijs. Onderwijsbouwen werkt samen met scholen in de Haaglanden en is aangesloten bij Kennisnet Entree Federatie, SIVON, het Privacyconvenant Onderwijs en Edu-V. Het bedrijf is klein, toegewijd en in groei, met een netwerk van docent-adviseurs en institutionele partners.";
+  "Onderwijsbouwen is een Nederlandse onderwijssoftware-studio die werkt aan slimme tools voor het Nederlandse onderwijs. Het bedrijf is in 2024 opgericht door Coen Sluijter, docent aardrijkskunde in de Haaglanden, en is gevestigd in Rotterdam (KvK 93598874). Onderwijsbouwen ontwikkelt drie initiatieven: Corrigo, een AI-nakijk- en toetsbouwtool voor docenten in het voortgezet onderwijs (gemiddeld 9 uur/week besparing); Actuales, wekelijkse gedifferentieerde lespakketten over actueel nieuws voor po (groep 5-8) en onderbouw vo; en Nexus Academy, een Socratische AI-studiecoach met 544 SLO-doelen en examenarchief voor leerlingen. Alle initiatieven delen hetzelfde uitgangspunt: de docent en de school in de regie houden, en bouwen vanuit de praktijk. Onderwijsbouwen is aangesloten bij Kennisnet Entree Federatie, SIVON (Modelverwerkersovereenkomst 4.0), het Privacyconvenant Onderwijs 4.0 en Edu-V, met 100% EU-AI-verwerking.";
 
 const productBoilerplates = [
   {
     name: "Corrigo",
-    text: "Corrigo is een AI-nakijk- en toetsbouwtool voor docenten in het voortgezet onderwijs. De tool automatiseert het corrigeren van open vragen, essays en toetsen, levert consistente feedback per leerling en geeft inzicht in waar de klas vastloopt. Corrigo wordt gebruikt op middelbare scholen door heel Nederland. Meer op corrigo.nl.",
+    text: "Corrigo is een AI-nakijktool en toetsbouwer voor docenten in het voortgezet onderwijs. De tool automatiseert het corrigeren van open vragen, essays en toetsen, levert consistente feedback per leerling, en biedt een toetsbouwer met RTTI-analyse en SLO-doelkoppeling. Corrigo is live in Nederland (corrigo.nl) en Vlaanderen (corrigo.be) op 25+ VO-scholen met 100+ docenten.",
   },
   {
     name: "Actuales",
-    text: "Actuales levert wekelijks kant-en-klare lespakketten over actueel nieuws voor po en onderbouw vo. Elke editie bevat presentatie, lesscript, werkbladen op drie niveaus met NT2-taalsteun, quiz en een nieuwsfragment met kijkvragen. Bij groot nieuws verschijnt een extra editie. Actuales is ontwikkeld voor groep 5 tot en met 8 en de onderbouw van het vo. Meer op actuales.nl.",
+    text: "Actuales levert wekelijks kant-en-klare lespakketten over actueel nieuws voor po (groep 5 t/m 8) en onderbouw vo. Elke editie bevat een presentatie (PowerPoint & digibord-Klaslokaal), lesscript, werkbladen op 3 niveaus met NT2-taalsteun, RTTI-quiz en nieuwsfragment met kijkvragen. Bij groot nieuws verschijnt binnen 24 uur een extra editie. Meer op actuales.nl.",
   },
   {
-    name: "Nexus",
-    text: "Nexus is een leerplatform in ontwikkeling voor leerlingen in het voortgezet onderwijs. Het biedt persoonlijke begeleiding via een AI-leercoach die uitlegt, doorvraagt en meedenkt op het niveau van de leerling. Nexus is opgezet vanuit het principe dat kwalitatieve begeleiding niet afhankelijk hoort te zijn van wat ouders kunnen betalen. Meer op nexusacademy.nl.",
+    name: "Nexus Academy",
+    text: "Nexus Academy is een Socratische AI-studiecoach en studieomgeving voor leerlingen in het voortgezet onderwijs en studenten. De coach legt uit, vraagt door en begeleidt op het niveau van de leerling zelf met 544 SLO-doelen en ruim 400 examens. Via een gesloten leerlus met Corrigo worden toetscijfers direct omgezet in gerichte oefenpaden. Live in besloten pilotfase op nexusacademy.nl.",
   },
 ];
 
@@ -47,7 +47,7 @@ const quickFacts = [
   { label: "KvK", value: KVK_NUMBER },
   {
     label: "Initiatieven",
-    value: "Corrigo (live), Actuales (live), Nexus (in ontwikkeling)",
+    value: "Corrigo (live NL & BE), Actuales (live), Nexus Academy (live pilotfase)",
   },
   { label: "Doelgroep", value: "Primair en voortgezet onderwijs in Nederland" },
   {

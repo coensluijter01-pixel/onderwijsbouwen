@@ -129,11 +129,11 @@ export default function OverPage() {
                   goede gesprekken met de mensen die er dagelijks mee werken.
                 </p>
                 <p>
-                  We bouwen aan drie initiatieven: Corrigo, een nakijk- en
+                  We bouwen aan drie initiatieven: Corrigo, een AI-nakijk- en
                   toetsbouwtool voor docenten in het voortgezet onderwijs;
                   Actuales, wekelijkse lespakketten over actueel nieuws voor
-                  po en onderbouw vo; en Nexus, een leerplatform in
-                  ontwikkeling voor leerlingen. Alle initiatieven delen dezelfde
+                  po en onderbouw vo; en Nexus Academy, een Socratische AI-studiecoach
+                  voor leerlingen. Alle initiatieven delen dezelfde
                   basis: respect voor de tijd van de gebruiker en de regie van
                   de school.
                 </p>
